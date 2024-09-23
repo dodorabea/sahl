@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Sahl</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/images/fav/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!-- Aos Animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/gsap.min.js"></script>
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="vertical">
+    <!-- <div id="preloader" class="d-flex align-items-center justify-content-center">
+        <img src="assets/images/preloader/earth.gif"/>
+    </div> -->
+    <!--Header-->
+    <header data-lenis-prevent class="header" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/images/logo/sahl-logo.svg" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center" data-lenis-prevent>
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="#" class="menu__link">الصفحة الرئيسية </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                من نحن؟
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="#">نبذة عنا</a></li>
+                                    <li><a href="#">أخر الأخبار</a></li>
+                                    <li><a href="#">دليل الخدمات</a></li>
+                                    <li><a href="#">حساباتنا البنكية</a></li>
+                                    <li><a href="#">سياسه الخصوصيه</a></li>
+                                    <li><a href="#">الشروط والأحكام</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                الدعم
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="#">اتصل بنا</a></li>
+                                    <li><a href="#">الأسئلة الشائعة</a></li>
+                                    <li><a href="#">مركز التحميلات</a></li>
+                                    <li><a href="#">الوظائف</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                الخدمات
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="#">تأسيس الشركات</a></li>
+                                    <li><a href="#">خدمات قانونية</a></li>
+                                    <li><a href="#">خدمات المستثمرين</a></li>
+                                    <li><a href="#">برنامج حماية الأجور</a></li>
+                                    <li><a href="#">تسجيل العلامات التجارية</a></li>
+                                    <li><a href="#">اداره الخدمات الالكترونية</a></li>
+                                    <li><a href="#">الخدمات المالية</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">الباقات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">انضم إلينا</a></li>
+                        <!---->
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a class="btn btn-order">اطلب خدمه</a>
+                <a href="#" class="btn btn-language">
+                    <span>English</span>
+                    <img src="assets/images/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!--Main-Section-->
+    <div class="main-section position-relative d-flex align-items-center"
+        style="background: url(assets/images/global-image/main-image.PNG);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <h3>سهل للخدمات</h3>
+                    <h3>العامة في المملكه وحلول الأعمال </h3>
+                    <p class="mt-3 mb-5">
+                        نتطلع الي ابتكار الأفكار واستقطاب الكوادر التي تمثل اعلي معايير التميز في تقديم خدمه مهنيه
+                        احترافيه بأعلي جودة ممكنة وتمكي كل من يساهم بذلك من النمو المستمر
+                    </p>
+                    <a href="#" class="btn btn-more">اعرف اكتر</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--intro-section-->
+    <section class="intro-section section-padding">
+        <div class="container">
+            <div class="intro-section-container">
+                <div
+                    class="intro-section-item position-relative h-100 d-flex align-items-center justify-content-center flex-column">
+                    <span class="icon-part mb-3 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/global-image/business.svg" alt="icon" />
+                    </span>
+                    <h3 class="text-center">المشوره في مجال الاعمال</h3>
+                </div>
+                <!---->
+                <div
+                    class="intro-section-item position-relative h-100 d-flex align-items-center justify-content-center flex-column">
+                    <span class="icon-part mb-3 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/global-image/development.svg" alt="icon" />
+                    </span>
+                    <h3 class="text-center">التطوير والتميز</h3>
+                </div>
+                <!---->
+                <div
+                    class="intro-section-item position-relative h-100 d-flex align-items-center justify-content-center flex-column">
+                    <span class="icon-part mb-3 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/global-image/solutions.svg" alt="icon" />
+                    </span>
+                    <h3 class="text-center">الحلول والخطط</h3>
+                </div>
+                <!---->
+                <div
+                    class="intro-section-item position-relative h-100 d-flex align-items-center justify-content-center flex-column">
+                    <span class="icon-part mb-3 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/global-image/training.svg" alt="icon" />
+                    </span>
+                    <h3 class="text-center">التدريب والتأهل </h3>
+                </div>
+                <!---->
+
+            </div>
+        </div>
+    </section>
+    <!--Sahl-services-->
+    <section class="sahl-services section-padding">
+        <div class="container">
+            <div class="title-section">
+                <h3>خدمات سهل</h3>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper service-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sahl-services-item  mb-3 h-100">
+                            <a href="#" class="d-flex justify-content-center flex-column align-items-center">
+                                <div class="image-part d-flex align-items-center justify-content-center mb-4">
+                                    <img src="assets/images/services/Investor.svg" alt="icon" />
+                                </div>
+                                <p class="text text-center">خدمات المستثمرين</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="sahl-services-item mb-3 h-100">
+                            <a href="#" class="d-flex justify-content-center flex-column align-items-center">
+                                <div class="image-part d-flex align-items-center justify-content-center mb-4">
+                                    <img src="assets/images/services/Facilities.svg" alt="icon" />
+                                </div>
+                                <p class="text text-center">خدمات المنشأت</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="sahl-services-item mb-3 h-100">
+                            <a href="#" class="d-flex justify-content-center flex-column align-items-center">
+                                <div class="image-part d-flex align-items-center justify-content-center mb-4">
+                                    <img src="assets/images/services/zakat.svg" alt="icon" />
+                                </div>
+                                <p class="text text-center">الضريبة والزكاة</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="sahl-services-item mb-3 h-100">
+                            <a href="#" class="d-flex justify-content-center flex-column align-items-center">
+                                <div class="image-part d-flex align-items-center justify-content-center mb-4">
+                                    <img src="assets/images/services/Legal.svg" alt="icon" />
+                                </div>
+                                <p class="text text-center">الخدمات القانونية</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="sahl-services-item mb-3 h-100">
+                            <a href="#" class="d-flex justify-content-center flex-column align-items-center">
+                                <div class="image-part d-flex align-items-center justify-content-center mb-4">
+                                    <img src="assets/images/services/Support.svg" alt="icon" />
+                                </div>
+                                <p class="text text-center">الخدمات المسانده</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="sahl-services-item  mb-3 h-100">
+                            <a href="#" class="d-flex justify-content-center flex-column align-items-center">
+                                <div class="image-part d-flex align-items-center justify-content-center mb-4">
+                                    <img src="assets/images/services/Consulting.svg" alt="icon" />
+                                </div>
+                                <p class="text text-center">الاستشارات</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!--Services-offered-->
+    <section class="services-offered section-padding">
+        <div class="container">
+            <div class="title-section">
+                <h3>ماذا نقدم لكم؟</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>تأسيس الشركات</h3>
+                            <img src="assets/images/offered-services/companies.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">خبره فائقه في تأسيس الشركات حيث نمتلك سنوات عديده من الخبره في تقديم خدمات
+                                تأسيس الشركات بمهنية عاليه وفقا للقوانين
+                                واللوائح الساريه في السعوديه.</p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>اداره الخدمات الالكترونية</h3>
+                            <img src="assets/images/offered-services/electronic.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">تسهيل انجاز وتقديم المعاملات عبر المنصات الالكترونية.حيث يوجد لدينا اخصائيون
+                                بخبرات
+                                تتجاوز العقدين في اليه تنفيذ واجراء المعاملات الحكومية والقطاع الخاص.</p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>خدمات المستثمرين</h3>
+                            <img src="assets/images/offered-services/investor.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">فريقنا متخصص في مساعده المستثمرين الاجانب علي اجتياز عمليه الحصول علي رخصه
+                                الاستثمار في السعوديه.من التقديم الي المستندات اللازمه وصولا للدعم المستمر.</p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>تسجيل العلامة التجارية</h3>
+                            <img src="assets/images/offered-services/trademark.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">
+                                نقدم خدماتنا الاحترافيه في تسجيل العلامات التجارية لدي الهيئة السعودية للملكية الفكرية
+                                بهدف حمايه العلامات التجارية وصونها من جرائم التزوير والمن
+                            </p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>الخدمات القانونية</h3>
+                            <img src="assets/images/offered-services/legal.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">
+                                خدمات رفيعه المستوي بأداء احترافي يساعدكم علي الاختيار الأمثل والأكثر دقه لوضع الحجر
+                                القانوني الأساس لنجاحاتكم وتقديم افضل الحلول المبتكره لاحتياجاتكم
+                            </p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>حماية الاجور </h3>
+                            <img src="assets/images/offered-services/protectio.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">
+                                نحرص علي اثبات وتوثيق التزام صاحب العمل بتطبيق نظام حمايه الاجور مما يعينه علي تجنب
+                                مخالفات نظام العمل وقضايا الخلافات العقاليه المتعلقه بالأجور.
+                            </p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>استشارات ونصائح</h3>
+                            <img src="assets/images/offered-services/advice.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">
+                                نصائح واستشارات دقيقة تعطي صورة واضحة وشاملة للمشكلة وتضع الحلول المناسبة والمبتكرة
+                                وتساهم بتطوير الأفكار الابداعيه وتحويلها الي واقع ملموس عبر سبل للتطوير .
+                            </p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                    <div class="services-offered-item h-100">
+                        <div class="header-part d-flex align-items-center justify-content-between mb-2">
+                            <h3>الدعم التقني والتسويق</h3>
+                            <img src="assets/images/offered-services/technicalsupport.svg" alt="image" />
+                        </div>
+                        <div class="body-part">
+                            <p class="mb-3">
+                                تأسيس منصات الكترونية متقدمة وفعالة لجميع المنشأت وتقديم جميع الخدمات المعلوماتية
+                                والالكترونية متنوعه تتميز بدرجة عاليه من الأمان والخصوصية والكفاءة
+                            </p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="#" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+    <!--Sahl-package-->
+    <section class="sahl-package section-padding">
+        <div class="container">
+            <div class="title-section">
+                <h3>الباقات </h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-11 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <div class="sahl-package-item h-100">
+                                <h2 class="text-center mb-3">المبتدئة</h2>
+                                <span class="d-block text-center">تبدأ من <span>8000.00</span>ريال . سنويا</span>
+                                <span class="d-block text-center">
+                                    (1 الي 50 ) عامل
+                                </span>
+                                <a href="#" class="btn d-block">طلب سعر</a>
+                                <ul>
+                                    <li class="d-flex align-items-center position-relative mb-3">
+                                        اداره الرواتب
+                                    </li>
+                                    <li class="d-flex align-items-center position-relative mb-3">
+                                        رفع ملفات
+                                    </li>
+                                    <li class="d-flex align-items-center position-relative mb-3">
+                                        متابعة ازالة الملاحظات
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <div class="sahl-package-item h-100">
+                                <h2 class="text-center mb-3">الانطلاقة</h2>
+                                <span class="d-block text-center">تبدأ من <span>9000.00</span>ريال . سنويا</span>
+                                <span class="d-block text-center">
+                                    (51 الي 100 ) عامل
+                                </span>
+                                <a href="#" class="btn d-block">طلب سعر</a>
+                                <ul>
+                                    <li class="d-flex align-items-center position-relative mb-3">
+                                        اداره الرواتب
+                                    </li>
+                                    <li class="d-flex align-items-center position-relative mb-3">
+                                        رفع ملفات
+                                    </li>
+                                    <li class="d-flex align-items-center position-relative mb-3">
+                                        متابعة ازالة الملاحظات
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <a href="#"
+                        class="btn btn-primary btn-show-package d-flex align-items-center justify-content-center gap-3 mt-5">
+                        <span>عرض الباقات</span>
+                        <img src="assets/images/icon/arrow-left.svg" alt="icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--partners-section-->
+    <section class="partners-section">
+        <div class="container">
+            <div class="title-section">
+                <h3>شركاء العمل</h3>
+            </div>
+        </div>
+        <div class="partners-section-content section-padding position-relative">
+            <div class="container">
+                <div class="position-relative">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper partner-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo1.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo2.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo3.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo4.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo5.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo1.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo2.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo3.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo4.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="box d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/logo/logo5.PNG" alt="logo" />
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="assets/images/icon/swiper-next.svg" alt="icon" />
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="assets/images/icon/swiper-prev.svg" alt="icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--recent-news-->
+    <section class="recent-news section-padding">
+        <div class="container">
+            <div class="title-section">
+                <h3>أحدث الأخبار</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="recent-news-item">
+                        <div class="header-part">
+                            <img src="assets/images/news/news1.png" alt="image" />
+                        </div>
+                        <div class="body-part h-100">
+                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 14يوليو 2024</span>
+                            <h4 class="mb-3">التزام صاحب العمل </h4>
+                            <p>في بيئه العمل لمخاطر عدة تتسبب في اصابته باصابه عمل او مرض مهني ويأتي هنا دور صاحب العمل
+                                في تحمل المسؤولية الكامله لعلاج هذه الاصابات</p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <div class="recent-news-item">
+                        <div class="header-part">
+                            <img src="assets/images/news/news2.png" alt="image" />
+                        </div>
+                        <div class="body-part h-100">
+                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 15يوليو 2024</span>
+                            <h4 class="mb-3">أهمية اتخاذ الاحتياطات</h4>
+                            <p>السلامة في مكان العمل هي أولوية قصوي لكل صاحب عمل ولاسيما عندما يتعلق الأمر بالوقايه من
+                                الحرائق. تعتبر الحرائق من اخطر الحوادث التي قد تحدث في اي </p>
+                        </div>
+                        <div class="footer-part">
+                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <a href="#"
+                        class="btn btn-primary btn-show-package d-flex align-items-center justify-content-center gap-3 mt-5">
+                        <span>عرض المزيد</span>
+                        <img src="assets/images/icon/arrow-left.svg" alt="icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--customer-reviews-->
+    <section class="customer-review section-padding">
+        <div class="container">
+            <div class="title-section">
+                <h3>أراء العملاء </h3>
+            </div>
+            <div class="customer-review-slider-item position-relative">
+                <!--js script in the end of page customer-review-slider -->
+                <div class="swiper mySwiper customer-review-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="d-flex align-items-center gap-4 h-100 item-flex">
+                                <div class="image">
+                                    <img src="assets/images/customer/customer.png" alt="image" />
+                                </div>
+                                <div class="customer-review-box">
+                                    <h4 class="mb-1">د.محمد الغرباوي</h4>
+                                    <span class="d-block">مدير الموارد البشرية</span>
+                                    <p class="mt-4">تجربتي مع سهل كانت ولازالت رائعه جدا من نواحي كثيره ابرزها تسهيل سير
+                                        المؤسسه بشكل
+                                        قانوني بحت مع تقديم المشوره والحلول لكل مشكله شركة سهل من انجح الشركات وافضلها
+                                        ودائما اهل للثقة متميزون بالسرعه في الرد والاجابه التي تحمل الخبرة فشكرا لن
+                                        نوفيكم حقا سعيتم فكان السعي مشكورا أنصح بالتعامل معهم .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="swiper-slide">
+                            <div class="d-flex align-items-center gap-4 h-100 item-flex">
+                                <div class="image">
+                                    <img src="assets/images/customer/customer.png" alt="image" />
+                                </div>
+                                <div class="customer-review-box">
+                                    <h4 class="mb-1">د.محمد الغرباوي</h4>
+                                    <span class="d-block">مدير الموارد البشرية</span>
+                                    <p class="mt-4">تجربتي مع سهل كانت ولازالت رائعه جدا من نواحي كثيره ابرزها تسهيل سير
+                                        المؤسسه بشكل
+                                        قانوني بحت مع تقديم المشوره والحلول لكل مشكله شركة سهل من انجح الشركات وافضلها
+                                        ودائما اهل للثقة متميزون بالسرعه في الرد والاجابه التي تحمل الخبرة فشكرا لن
+                                        نوفيكم حقا سعيتم فكان السعي مشكورا أنصح بالتعامل معهم .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+
+                    </div>
+
+                </div>
+                <div class="swiper-button-next swiper-button">
+                    <span class="d-flex align-items-center justify-content-center">
+                        <img src="assets/images/icon/slider-arrow-right.svg" alt="icon">
+                    </span>
+                </div>
+                <div class="swiper-button-prev swiper-button">
+                    <span class="d-flex align-items-center justify-content-center">
+                        <img src="assets/images/icon/slider-arrow.svg" alt="icon">
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--help-offer-->
+    <section class="help-offer section-padding">
+        <div class="container">
+            <div class="title-section">
+                <h3>كيف يمكننا المساعدة ؟</h3>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            من هي شركه سهل للخدمات ؟
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            لماذا تختار سهل للخدمات ؟
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            هل تقوم سهل للخدمات باداره الخدمات الالكترونيه لجميع المنصات الحكوميه ؟
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ماهي أنواع المنشأت التي تقدم شركه سهل الخدمات لها ؟
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <a href="#"
+                        class="btn btn-primary btn-show-package d-flex align-items-center justify-content-center gap-3 mt-5">
+                        <span>عرض المزيد</span>
+                        <img src="assets/images/icon/arrow-left.svg" alt="icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Subscribe-->
+    <section class="subscribe-section section-padding d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <h4 class="mb-4">شركه سهل للخدات العامة وحلول الأعمال</h4>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="form-control-div">
+                        <label class="d-block text-center mb-4">
+                            اشترك معنا لتصلك اخر الأخبار
+                        </label>
+                        <div class="input-group position-relative mb-3">
+                            <input type="text" class="form-control" placeholder="ادخل عنوان البريد الالكتروني" aria-label=""
+                                aria-describedby="basic-addon1">
+                            <div class="input-group-prepend d-flex align-items-center">
+                                    <button class="btn btn-primary" type="button">الاشترك</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--WatsApp floating-->
+    <div class="floating-watsapp-icon">
+        <a href="tel:+0998887666">
+            <img src="assets/images/global-image/watsapp.svg" alt="icon"/>
+        </a>
+    </div>
+    <!---->
+    <div class="contentDiv" id="content">
+        <button class="back-to-top" type="button"></button>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container d-flex justify-content-between flex-wrap">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/sahl-logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <!---->
+                <div class="quick-links">
+                    <h5 class="mb-4">روابط هامة</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>اطلب خدمة </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>من نحن؟</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span> انضم الينا </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>اتصل بنا </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="quick-links">
+                    <h5 class="mb-4">اتصل بنا</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/location.svg" alt="icon" />
+                                <ol>
+                                    <li>
+                                        <span>المنطقهة الوسطي _ الرياض _الروضة _12333</span>
+                                    </li>
+                                    <li>
+                                        <span> المنطقهة الشرقية _ الخبر _الراكه الجنوبية_13393</span>
+                                    </li>
+                                    <li>
+                                        <span>المنطقهة الجنوبية _ محايل عسير _البلد 53637</span>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="d-flex gap-3">
+                                <img src="assets/images/icon/phone.svg" alt="icon" />
+                                <span class="d-flex align-items-center gap-3 flex-wrap">
+                                    <a href="tel:+0998887666">0998887666</a>
+                                    <a href="tel:+7764649999">7764649999</a>
+                                    <a href="tel:+09887666">09887666</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="mailto:info@SAHL.com.sa">
+                                <img src="assets/images/icon/envolpment.svg" alt="icon" />
+                                <span>info@SAHL.com.sa</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="quick-links social-links">
+                    <h5 class="mb-4">تواصل معنا عبر مواقعنا</h5>
+                    <ul class="d-flex align-items-center justify-content-center gap-3">
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-youtube.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-twitter.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-facebook.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-insta.svg" alt="icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex align-items-center justify-content-between">
+                <p>
+                    شركه سهل للخدمات موثقه لدي وزاره التجاره .بسجل تجاري رقم 1009874.
+                </p>
+                <p>
+                    جميع الحقوق محفوظة لشركة سهل للخدمات 2024
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/aos/js/aos.js"></script>
+    <!--ScrollTrigger-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--lenis-->
+    <script src="assets/js/lenis.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/script_lenis.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!--Main Js-->
+    <script src="assets/js/main.js"></script>
+    <!-- Initialize serviceSwiper Swiper -->
+    <script>
+        var serviceSwiper = new Swiper(".mySwiper.service-swiper", {
+            slidesPerView: 1.5,
+            autoplay: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.5,
+                },
+                400: {
+                    slidesPerView: 2.5,
+                },
+                880: {
+                    slidesPerView: 4,
+                },
+                1025: {
+                    slidesPerView: 5.5,
+                },
+                1366: {
+                    slidesPerView: 6,
+                }
+            }
+        });
+    </script>
+    <!-- Initialize partner-slider -->
+    <script>
+        var partnerSlider = new Swiper(".mySwiper.partner-slider", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            autoplay: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                },
+                400: {
+                    slidesPerView: 2.25,
+                },
+                880: {
+                    slidesPerView: 3,
+                },
+                1025: {
+                    slidesPerView: 4.5,
+                },
+                1366: {
+                    slidesPerView: 5,
+                }
+            },
+        });
+    </script>
+    <!-- Initialize customer-review-slider -->
+    <script>
+        var reviewSlider = new Swiper(".mySwiper.customer-review-slider", {
+            autoplay: false,
+            loop: false,
+            navigation: {
+                nextEl: ".swiper-button-next.swiper-button",
+                prevEl: ".swiper-button-prev.swiper-button",
+            },
+        });
+    </script>
+</body>
+
+</html>
