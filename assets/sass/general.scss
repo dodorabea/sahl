@@ -155,14 +155,18 @@ h6 {
     background: #fff;
 
     .accordion-button {
-        font-size: 1.15rem;
+        font-size: 0.99rem;
+        line-height: 1.5rem;
         color: map_get($theme-colors, primaryTextColor);
         font-family: $font-family-Bold;
         box-shadow: none;
         border: 0;
         border-radius: 0;
         height: 65px;
-
+        padding: 1.75rem 1rem;
+        @media only screen and (min-width: 769px) {
+            font-size: 1.1rem;
+        }
         &::after {
             width: 15px;
             height: 7px;
@@ -311,7 +315,89 @@ h6 {
         }
     }
 }
+/*---Loader---*/
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff;
+    
 
+}
+@keyframes loader {
+	0%, 10%, 100% {
+		width: 80px;
+		height: 80px;
+	}
+	65% {
+		width: 150px;
+		height: 150px;
+	}
+}
+@keyframes loaderBlock {
+	0%, 30% { 
+		transform: rotate(0);
+	}
+	55% {
+		background-color: map_get($theme-colors, primary);
+	}
+	100% {
+		transform: rotate(90deg);
+
+	}
+}
+@keyframes loaderBlockInverse {
+	0%, 20% { 
+		transform: rotate(0);
+	}
+	55% {
+		background-color: map_get($theme-colors, primary);
+	}
+	100% {
+		transform: rotate(-90deg);
+	}
+}
+.loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	transform: translate(-50%, -50%) rotate(45deg) translate3d(0,0,0);
+	animation: loader 1.2s infinite ease-in-out;
+
+	span {
+		position: absolute;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: map_get($theme-colors, primary);
+		animation: loaderBlock 1.2s infinite ease-in-out both;
+
+		&:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+		&:nth-child(2) {
+			top: 0;
+			right: 0;
+			animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+		}
+		&:nth-child(3) {
+			bottom: 0;
+			left: 0;
+			animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+		}
+		&:nth-child(4) {
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
 /*---Textarea---*/
 textarea {
     &.form-control {
@@ -338,24 +424,6 @@ textarea {
         }
     }
 }
-
-.js div#preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    background: #000;
-    /* You can change the background color and image URL here.  This solution works with animated .svg and animated .gif */
-    //    img{
-    //     width: 100%;
-    //     object-fit: cover;
-    //    }
-
-}
-
 /*--Header--*/
 // Breakpoint
 $breakpoint: 991px;
@@ -395,7 +463,12 @@ $breakpoint: 991px;
     margin: 0 auto;
     background-color: map_get($theme-colors, primary);
 }
-
+.mobile-screen{
+    display: none !important;
+    @media (max-width: ($breakpoint - 1)) {
+        display: flex !important;
+    }
+}
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -425,7 +498,6 @@ $breakpoint: 991px;
             align-items: center;
         }
     }
-
     .navbar__right {
         display: flex;
         align-items: center;
@@ -1758,9 +1830,10 @@ $breakpoint: 991px;
         font-size: 1.5rem;
         color: map_get($theme-colors, primary);
         font-family: $font-family-Bold;
-
+        text-align: center;
         @media only screen and (min-width:991px) {
             font-size: 2rem;
+            text-align: start;
         }
     }
 
@@ -1842,7 +1915,10 @@ $breakpoint: 991px;
     @include position(fixed, unset, unset, 2rem, 1rem);
 
     img {
-        width: 80px;
+        width: 60px;
+        @media only screen and (min-width: 769px) {
+            width: 80px;
+        }
     }
 }
 
@@ -1916,6 +1992,10 @@ button.back-to-top.show {
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    @media only screen and (max-width: 769px) {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 button.back-to-top.show:active {
@@ -2004,9 +2084,12 @@ footer {
         padding-top: 1.5rem;
 
         p {
-            font-size: 1rem;
+            font-size: 0.849rem;
             color: #fff;
             font-family: $font-family-Bold;
+            @media only screen and (min-width: 991px) {
+                font-size: 1rem;
+            }
         }
     }
 

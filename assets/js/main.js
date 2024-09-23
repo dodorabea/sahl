@@ -3,15 +3,15 @@
 
   document.documentElement.classList.add("js");
 
-  // dom is loaded
-  //   jQuery(document).ready(function ($) {
+  //dom is loaded
+    jQuery(document).ready(function ($) {
 
-  //     setTimeout(function () {
-  //         $('#preloader').fadeOut('slow', function () {
-  //             $(this).remove();
-  //         });
-  //     }, 3000); 
-  // });
+      setTimeout(function () {
+          $('#preloader').fadeOut('slow', function () {
+              $(this).remove();
+          });
+      }, 2000); 
+  });
   /*====scroll Top==== */
   // Back to top
   var amountScrolled = 200;
