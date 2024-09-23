@@ -2061,7 +2061,7 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 11111;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   overflow: visible;
