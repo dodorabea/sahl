@@ -3433,6 +3433,9 @@ html[dir=ltr] .sahl-package.option .sahl-package-item ul li::before {
     font-size: 1.1rem;
   }
 }
+.common-question .nav-tabs .nav-item .nav-link.active {
+  color: #fff;
+}
 
 /*--jobs-section--*/
 @media only screen and (min-width: 991px) {

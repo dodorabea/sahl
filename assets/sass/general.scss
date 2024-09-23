@@ -1851,6 +1851,9 @@ $breakpoint: 991px;
                 @media (max-width: 991.98px) {
                     font-size: 1.1rem;
                 }
+                &.active {
+                    color: #fff;
+                }
             }
         }
     }
