@@ -380,6 +380,13 @@ h6 {
             border-radius: 15px;
             border: 1px solid  map_get($theme-colors, primary);
             padding: 0rem 1rem;
+            --bs-dropdown-min-width: 16rem;
+            h4{
+                padding-top: 1.1rem;
+                font-size: 1rem;
+                color: #fff;
+                font-family: $font-family-Bold;
+            }
             li{
                 display: block;
                 line-height: 1;

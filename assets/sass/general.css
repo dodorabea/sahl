@@ -2108,6 +2108,13 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   border-radius: 15px;
   border: 1px solid #1E9B4F;
   padding: 0rem 1rem;
+  --bs-dropdown-min-width: 16rem;
+}
+.search-part .sort-search .dropdown-menu h4 {
+  padding-top: 1.1rem;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Tajawal-Bold", sans-serif;
 }
 .search-part .sort-search .dropdown-menu li {
   display: block;
