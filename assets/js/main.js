@@ -1,19 +1,15 @@
 (function ($) {
   "use strict";
-
   document.documentElement.classList.add("js");
-
-  //dom is loaded
-    jQuery(document).ready(function ($) {
-
-      setTimeout(function () {
-          $('#preloader').fadeOut('slow', function () {
-              $(this).remove();
-          });
-      }, 2000); 
+  /*====Dom is loaded==== */
+  jQuery(document).ready(function ($) {
+    setTimeout(function () {
+      $('#preloader').fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }, 2000);
   });
-  /*====scroll Top==== */
-  // Back to top
+  /*====Back to top==== */
   var amountScrolled = 200;
   var amountScrolledNav = 25;
 
@@ -34,14 +30,13 @@
   /*=====AOS animation=====*/
   AOS.init({
     // Global settings:
-    duration: 1400,
+    duration: 900,
     easing: 'ease-in-cubic',
     disable: 'mobile',
   });
   AOS.refresh();
   /*=====video paly=====*/
   const video = document.getElementById("video");
-
   function togglePlay() {
     if (video.paused || video.ended) {
       video.play();
@@ -69,7 +64,7 @@
   }
 
 })(jQuery);
-//Header
+/*=====Header=====*/
 const menu = document.querySelector(".menu");
 const menuInner = menu.querySelector(".menu__inner");
 const menuArrow = menu.querySelector(".menu__arrow");

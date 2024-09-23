@@ -106,11 +106,14 @@ h6 {
 /*---Global Style--*/
 .title-section {
     margin-bottom: 2.563rem;
-
     h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: map_get($theme-colors, primary);
         font-family: $font-family-Bold;
+        
+        @media only screen and (min-width: 769px) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -134,11 +137,17 @@ h6 {
     color: map_get($theme-colors, white);
     border-radius: 10px;
     padding: 0.758rem 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: $font-family-Bold;
-
+    
+    @media only screen and (min-width: 769px) {
+        font-size: 1.25rem;
+    }
     img {
-        width: 1.5rem;
+        width: 1rem;
+        @media only screen and (min-width: 769px) {
+            width: 1.5rem;
+        }
     }
 }
 
@@ -320,13 +329,11 @@ h6 {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 999;
+    z-index: 11111;
     width: 100%;
     height: 100%;
     overflow: visible;
     background: #fff;
-    
-
 }
 @keyframes loader {
 	0%, 10%, 100% {
