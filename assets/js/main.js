@@ -72,7 +72,31 @@
       }
     });
   }
-
+  /*==========Counter=========*/
+  $(window).on('scroll', function() {
+    $('.counting').each(function() {
+      var $this = $(this),
+          countTo = $this.attr('data-count');
+      
+      // Check if the element is in view
+      if ($this.offset().top <= $(window).scrollTop() + $(window).height()) {
+        
+        // Start the counting animation
+        $({ countNum: $this.text() }).animate({
+          countNum: countTo
+        }, {
+          duration: 1000,
+          easing: 'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+        });
+      }
+    });
+  });
 })(jQuery);
 /*=====Header=====*/
 const menu = document.querySelector(".menu");
