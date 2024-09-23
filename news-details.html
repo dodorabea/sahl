@@ -35,6 +35,158 @@
 </head>
 
 <body id="vertical">
+     <!--Preloader-->
+     <div class="loader loader--active">
+        <div class="loader-span">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--Header-->
+    <header data-lenis-prevent class="header" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/images/logo/sahl-logo.svg" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center" data-lenis-prevent>
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link">الصفحة الرئيسية
+                            </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                من نحن؟
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="about.html">نبذة عنا</a></li>
+                                    <li><a href="news.html">أخر الأخبار</a></li>
+                                    <li><a href="#">دليل الخدمات</a></li>
+                                    <li><a href="bank-accounts.html">حساباتنا البنكية</a></li>
+                                    <li><a href="#">سياسه الخصوصيه</a></li>
+                                    <li><a href="#">الشروط والأحكام</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                الدعم
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="#">اتصل بنا</a></li>
+                                    <li><a href="common-questions.html">الأسئلة الشائعة</a></li>
+                                    <li><a href="#">مركز التحميلات</a></li>
+                                    <li><a href="jobs.html">الوظائف</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                الخدمات
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="#">تأسيس الشركات</a></li>
+                                    <li><a href="#">خدمات قانونية</a></li>
+                                    <li><a href="#">خدمات المستثمرين</a></li>
+                                    <li><a href="#">برنامج حماية الأجور</a></li>
+                                    <li><a href="#">تسجيل العلامات التجارية</a></li>
+                                    <li><a href="#">اداره الخدمات الالكترونية</a></li>
+                                    <li><a href="#">الخدمات المالية</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">الباقات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link">انضم إلينا</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">اطلب خدمه</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">
+                                English
+                            </a></li>
+                        <!---->
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a class="btn btn-order">اطلب خدمه</a>
+                <a href="#" class="btn btn-language">
+                    <span>English</span>
+                    <img src="assets/images/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!--breadcrumb-->
+    <section class="breadcrumb d-flex align-items-center">
+        <div class="container">
+            <h5 class="mb-3">أحدث الأخبار</h5>
+            <div class="row align-items-center">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12">
+                    <ul class="d-flex flex-wrap align-items-center gap-2">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">الصفحة الرئيسيه</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            تفاصيل الخبر 
+                        </li>
+                    </ul>
+                </div>
+                <!--Filter-->
+                <div class="xxl-5 col-xl-5 col-lg-5 col-md-12">
+                    <div class="search-part d-flex align-items-center gap-3">
+                        <div class="form-group">
+                            <div class="input-group d-flex align-items-center gap-2">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1">
+                                    <img src="assets/images/icon/search.svg" alt="icon"/>
+                                  </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="ابحث... " aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="sort-search">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/icon/Sort.svg" alt="icon"/>
+                                </button>
+                                <ul class="dropdown-menu ">
+                                  <li><a class="dropdown-item" href="#">المسؤوليه الاجتماعيه</a></li>
+                                  <li><a class="dropdown-item" href="#">نشره الأعمال </a></li>
+                                  <li><a class="dropdown-item" href="#">اخبار سهل</a></li>
+                                </ul>
+                              </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
      <!--News Details-->
      <section class="news-details section-padding">
         <div class="container">
@@ -92,7 +244,158 @@
             </div>
         </div>
     </section>
-    <!-- Footer - style you can find in style.css -->
+    <!--Subscribe-->
+    <section class="subscribe-section section-padding d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <h4 class="mb-4">شركه سهل للخدات العامة وحلول الأعمال</h4>
+                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                    <div class="form-control-div">
+                        <label class="d-block text-center mb-4">
+                            اشترك معنا لتصلك اخر الأخبار
+                        </label>
+                        <div class="input-group position-relative mb-3">
+                            <input type="text" class="form-control" placeholder="ادخل عنوان البريد الالكتروني"
+                                aria-label="" aria-describedby="basic-addon1">
+                            <div class="input-group-prepend d-flex align-items-center">
+                                <button class="btn btn-primary" type="button">الاشترك</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--WatsApp floating-->
+     <div class="floating-watsapp-icon">
+        <a href="tel:+0998887666">
+            <img src="assets/images/global-image/watsapp.svg" alt="icon" />
+        </a>
+    </div>
+    <!---->
+    <div class="contentDiv" id="content">
+        <button class="back-to-top" type="button"></button>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container d-flex justify-content-between flex-wrap">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/sahl-logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <!---->
+                <div class="quick-links">
+                    <h5 class="mb-4">روابط هامة</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>اطلب خدمة </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>من نحن؟</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span> انضم الينا </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>اتصل بنا </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="quick-links">
+                    <h5 class="mb-4">اتصل بنا</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/location.svg" alt="icon" />
+                                <ol>
+                                    <li>
+                                        <span>المنطقهة الوسطي _ الرياض _الروضة _12333</span>
+                                    </li>
+                                    <li>
+                                        <span> المنطقهة الشرقية _ الخبر _الراكه الجنوبية_13393</span>
+                                    </li>
+                                    <li>
+                                        <span>المنطقهة الجنوبية _ محايل عسير _البلد 53637</span>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="d-flex gap-3">
+                                <img src="assets/images/icon/phone.svg" alt="icon" />
+                                <span class="d-flex align-items-center gap-3 flex-wrap">
+                                    <a href="tel:+0998887666">0998887666</a>
+                                    <a href="tel:+7764649999">7764649999</a>
+                                    <a href="tel:+09887666">09887666</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="mailto:info@SAHL.com.sa">
+                                <img src="assets/images/icon/envolpment.svg" alt="icon" />
+                                <span>info@SAHL.com.sa</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="quick-links social-links">
+                    <h5 class="mb-4">تواصل معنا عبر مواقعنا</h5>
+                    <ul class="d-flex align-items-center justify-content-center gap-3">
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-youtube.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-twitter.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-facebook.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-insta.svg" alt="icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between">
+                <p>
+                    شركه سهل للخدمات موثقه لدي وزاره التجاره .بسجل تجاري رقم 1009874.
+                </p>
+                <p>
+                    جميع الحقوق محفوظة لشركة سهل للخدمات 2024
+                </p>
+            </div>
+        </div>
+    </footer>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!--JQuery Js-->
