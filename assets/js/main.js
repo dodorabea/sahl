@@ -2,13 +2,23 @@
   "use strict";
   document.documentElement.classList.add("js");
   /*====Dom is loaded==== */
-  jQuery(document).ready(function ($) {
-    setTimeout(function () {
-      $('#preloader').fadeOut('slow', function () {
-        $(this).remove();
-      });
-    }, 2000);
-  });
+  // jQuery(document).ready(function ($) {
+  //   setTimeout(function () {
+  //     $('#preloader').fadeOut('slow', function () {
+  //       $(this).remove();
+  //     });
+  //   }, 2000);
+  // });
+
+  var $loader = document.querySelector('.loader');
+  var $loaderSpan = document.querySelector('.loader-span');
+  
+  window.onload = function() {
+    setTimeout(function() {
+      $loader.classList.remove('loader');
+      $loaderSpan.classList.remove('loader-span');
+    }, 2000); 
+  };
   /*====Back to top==== */
   var amountScrolled = 200;
   var amountScrolledNav = 25;

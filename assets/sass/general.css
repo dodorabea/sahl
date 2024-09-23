@@ -2057,15 +2057,13 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
 }
 
 /*---Loader---*/
-.js div#preloader {
+.loader {
   position: fixed;
-  left: 0;
-  top: 0;
   z-index: 9999;
   width: 100%;
   height: 100%;
-  overflow: visible;
   background: #fff;
+  transition: width 0s 1.4s ease;
 }
 
 @keyframes loader {
@@ -2100,7 +2098,7 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
     transform: rotate(-90deg);
   }
 }
-.loader {
+.loader-span {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2111,7 +2109,14 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   animation: loader 1.2s infinite ease-in-out;
   background: #fff;
 }
-.loader span {
+.loader-span::after {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+.loader-span span {
   position: absolute;
   display: block;
   width: 40px;
@@ -2119,21 +2124,21 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   background-color: #1E9B4F;
   animation: loaderBlock 1.2s infinite ease-in-out both;
 }
-.loader span:nth-child(1) {
+.loader-span span:nth-child(1) {
   top: 0;
   left: 0;
 }
-.loader span:nth-child(2) {
+.loader-span span:nth-child(2) {
   top: 0;
   right: 0;
   animation: loaderBlockInverse 1.2s infinite ease-in-out both;
 }
-.loader span:nth-child(3) {
+.loader-span span:nth-child(3) {
   bottom: 0;
   left: 0;
   animation: loaderBlockInverse 1.2s infinite ease-in-out both;
 }
-.loader span:nth-child(4) {
+.loader-span span:nth-child(4) {
   bottom: 0;
   right: 0;
 }
@@ -2185,7 +2190,6 @@ textarea.form-control::placeholder {
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 100;
   margin: 0 auto;
   background-color: #1E9B4F;
 }
