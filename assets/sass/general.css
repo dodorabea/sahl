@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn-light-primary,
 .bg-light-primary {
   background-color: #4baf72 !important;
@@ -4004,6 +4005,111 @@ button.back-to-top.show:active {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+/*--bank-account--*/
+@media only screen and (min-width: 991px) {
+  .bank-account .row > * {
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+}
+.bank-account .bank-account-box {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 6px solid rgb(253, 251, 251);
+  border-radius: 6px;
+  padding: 2rem 1rem;
+  background: #fff;
+}
+.bank-account .bank-account-box .box-header img {
+  width: 60px;
+}
+.bank-account .bank-account-box .box-header p, .bank-account .bank-account-box .box-header .eng-bank-name {
+  font-size: 1.3rem;
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+  margin-bottom: 0;
+}
+.bank-account .bank-account-box .box-header .eng-bank-name {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.bank-account .bank-account-box .box-body .bank-account {
+  font-size: 1.1rem;
+  color: #6EA280;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media only screen and (max-width: 769px) {
+  .bank-account .bank-account-box .box-body .bank-account {
+    font-size: 0.849rem;
+  }
+}
+.bank-account .bank-account-box .box-body p {
+  font-size: 1.1rem;
+  color: #6EA280;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.bank-account .bank-account-box .box-body p span {
+  color: #1E9B4F;
+  font-family: "Tajawal-Regular", sans-serif;
+}
+@media only screen and (max-width: 769px) {
+  .bank-account .bank-account-box .box-body p {
+    font-size: 0.849rem;
+  }
+}
+.bank-account .copy-text input.text {
+  padding: 0px;
+  font-size: 16px;
+  color: #718479;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.bank-account .copy-text button {
+  padding: 0px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  background: transparent;
+}
+.bank-account .copy-text button img {
+  width: 20px;
+}
+.bank-account .copy-text button:active {
+  background: transparent;
+}
+.bank-account .copy-text button:before {
+  content: "تم النسخ!";
+  position: absolute;
+  top: -30px;
+  bottom: unset;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #1E9B4F;
+  padding: 9px 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  display: none;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+html[dir=rtl] .bank-account .copy-text button:before {
+  right: -25px;
+  left: 0;
+}
+html[dir=ltr] .bank-account .copy-text button:before {
+  right: 0;
+  left: -25px;
+}
+.bank-account .copy-text.active button:before {
+  display: block;
 }
 
 /*--footer--*/
