@@ -468,7 +468,39 @@ h6 {
         background-size: 15px;
     }
 }
-
+.modal{
+    .modal-content{
+        border: 0;
+        border-radius: 15px;
+        .modal-header{
+            background: map_get($theme-colors, primary);
+            border-radius:  15px;
+            color: #fff;
+            h5{
+                font-family: $font-family-Bold;
+            }
+        }
+        .rules{
+            font-size: 1.1rem;
+            color: map_get($theme-colors, primary);
+            font-family: $font-family-Bold;
+        }
+        .btn-danger{
+            background: map_get($theme-colors, danger);
+            font-size: 1.1rem;
+            padding: 0rem 1.5rem;
+            border-radius: 17px;
+            min-height: 54px;
+            font-family: $font-family-Bold;
+            @media (max-width: 991.98px){
+                width: 100%;
+            }
+            img{
+                width: 20px;
+            }
+        }
+    }
+}
 /*==Pagination==*/
 .pagination {
     gap: 0.5rem;
@@ -1477,15 +1509,8 @@ $breakpoint: 991px;
                         @include position(absolute, 7px, 0, auto, unset);
                         background: url(../images/icon/check.svg);
                     }
-
-                    &::before {
-                        content: '';
-                        @include position(absolute, 7px, unset, auto, 0);
-                        background: url(../images/icon/arrow-down.svg);
-                    }
-
-                    &::after,
-                    &::before {
+                    &::after
+                   {
                         background-repeat: no-repeat;
                         background-size: 15px;
                         width: 14px;
@@ -1495,6 +1520,21 @@ $breakpoint: 991px;
                 }
             }
 
+        }
+    }
+    .subscription-calculator{
+        margin-top: 3rem;
+        p{
+            font-size: 1rem;
+            color: map_get($theme-colors, primary);
+            font-family: $font-family-Bold;
+            @media only screen and (min-width: 991px) {
+                font-size: 1.5rem;
+            }
+        }
+        .btn{
+            border-radius: 0;
+            padding: 1rem 0;
         }
     }
 }

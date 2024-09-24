@@ -488,63 +488,63 @@
 
 .btn-light-danger,
 .bg-light-danger {
-  background-color: #e14343 !important;
+  background-color: #e16161 !important;
 }
 
 .btn-outline-danger {
-  color: #D91414;
-  border-color: #D91414;
+  color: #D93939;
+  border-color: #D93939;
 }
 .btn-outline-danger:hover {
   background-color: transparent;
-  border-color: #aa1010;
-  color: #D91414;
+  border-color: #bb2424;
+  color: #D93939;
 }
 .btn-outline-danger:disabled, .btn-outline-danger.disabled {
-  color: #930e0e;
-  border-color: #930e0e;
+  color: #a62020;
+  border-color: #a62020;
 }
 .btn-outline-danger:not(:disabled):not(.disabled):active {
   background-color: transparent;
-  border-color: #aa1010;
-  color: #D91414;
+  border-color: #bb2424;
+  color: #D93939;
 }
 
 .btn-danger,
 .bg-danger {
-  background-color: #D91414 !important;
-  border-color: #D91414 !important;
+  background-color: #D93939 !important;
+  border-color: #D93939 !important;
 }
 
 .btn-gradient-danger,
 .bg-gradient-danger {
-  background-image: linear-gradient(to right, #a91010, #db2020) !important;
+  background-image: linear-gradient(to right, #a92c2c, #db4343) !important;
 }
 
 .border-light-danger {
-  border-color: #e14343 !important;
+  border-color: #e16161 !important;
 }
 
 .border-danger {
-  border-color: #D91414 !important;
+  border-color: #D93939 !important;
 }
 
 .text-light-danger {
-  color: #e14343 !important;
+  color: #e16161 !important;
 }
 
 .text-danger {
-  color: #D91414 !important;
+  color: #D93939 !important;
 }
 
 .btn-light-danger:hover, .btn-light-danger:active, .btn-light-danger:focus {
-  background-color: #D91414 !important;
-  color: #e14343 !important;
+  background-color: #D93939 !important;
+  color: #e16161 !important;
 }
 
 .btn-danger:hover, .btn-danger:active, .btn-danger:focus {
-  background-color: #b41111 !important;
-  border-color: #980e0e !important;
+  background-color: #c42626 !important;
+  border-color: #aa2121 !important;
 }
 
 .btn-light-success,
@@ -850,67 +850,6 @@
 .btn-white:hover, .btn-white:active, .btn-white:focus {
   background-color: #ebebeb !important;
   border-color: #dbdbdb !important;
-}
-
-.btn-light-black,
-.bg-light-black {
-  background-color: #333333 !important;
-}
-
-.btn-outline-black {
-  color: #000000;
-  border-color: #000000;
-}
-.btn-outline-black:hover {
-  background-color: transparent;
-  border-color: black;
-  color: #000000;
-}
-.btn-outline-black:disabled, .btn-outline-black.disabled {
-  color: black;
-  border-color: black;
-}
-.btn-outline-black:not(:disabled):not(.disabled):active {
-  background-color: transparent;
-  border-color: black;
-  color: #000000;
-}
-
-.btn-black,
-.bg-black {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
-}
-
-.btn-gradient-black,
-.bg-gradient-black {
-  background-image: linear-gradient(to right, black, #0d0d0d) !important;
-}
-
-.border-light-black {
-  border-color: #333333 !important;
-}
-
-.border-black {
-  border-color: #000000 !important;
-}
-
-.text-light-black {
-  color: #333333 !important;
-}
-
-.text-black {
-  color: #000000 !important;
-}
-
-.btn-light-black:hover, .btn-light-black:active, .btn-light-black:focus {
-  background-color: #000000 !important;
-  color: #333333 !important;
-}
-
-.btn-black:hover, .btn-black:active, .btn-black:focus {
-  background-color: black !important;
-  border-color: black !important;
 }
 
 .btn-light-textBanner,
@@ -2178,6 +2117,40 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   background-size: 15px;
 }
 
+.modal .modal-content {
+  border: 0;
+  border-radius: 15px;
+}
+.modal .modal-content .modal-header {
+  background: #1E9B4F;
+  border-radius: 15px;
+  color: #fff;
+}
+.modal .modal-content .modal-header h5 {
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.modal .modal-content .rules {
+  font-size: 1.1rem;
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.modal .modal-content .btn-danger {
+  background: #D93939;
+  font-size: 1.1rem;
+  padding: 0rem 1.5rem;
+  border-radius: 17px;
+  min-height: 54px;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media (max-width: 991.98px) {
+  .modal .modal-content .btn-danger {
+    width: 100%;
+  }
+}
+.modal .modal-content .btn-danger img {
+  width: 20px;
+}
+
 /*==Pagination==*/
 .pagination {
   gap: 0.5rem;
@@ -3079,27 +3052,29 @@ html[dir=ltr] .sahl-package.option .sahl-package-item ul li::after {
   right: unset;
   left: 0;
 }
-.sahl-package.option .sahl-package-item ul li::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  bottom: auto;
-  background: url(../images/icon/arrow-down.svg);
-}
-html[dir=rtl] .sahl-package.option .sahl-package-item ul li::before {
-  right: unset;
-  left: 0;
-}
-html[dir=ltr] .sahl-package.option .sahl-package-item ul li::before {
-  right: 0;
-  left: unset;
-}
-.sahl-package.option .sahl-package-item ul li::after, .sahl-package.option .sahl-package-item ul li::before {
+.sahl-package.option .sahl-package-item ul li::after {
   background-repeat: no-repeat;
   background-size: 15px;
   width: 14px;
   height: 12px;
   margin: auto 0;
+}
+.sahl-package .subscription-calculator {
+  margin-top: 3rem;
+}
+.sahl-package .subscription-calculator p {
+  font-size: 1rem;
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+@media only screen and (min-width: 991px) {
+  .sahl-package .subscription-calculator p {
+    font-size: 1.5rem;
+  }
+}
+.sahl-package .subscription-calculator .btn {
+  border-radius: 0;
+  padding: 1rem 0;
 }
 
 /*--partners-section--*/
