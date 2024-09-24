@@ -3924,6 +3924,11 @@ button.back-to-top.show:active {
   color: #1E9B4F;
   font-family: "Tajawal-Bold", sans-serif;
 }
+.ask-order .ask-order-item h4 span {
+  font-family: "Tajawal-Regular", sans-serif;
+  font-size: 0.849rem;
+  color: #718479;
+}
 .ask-order .form-group {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 0;
@@ -3966,6 +3971,39 @@ button.back-to-top.show:active {
 .ask-order .btn-primary {
   border-radius: 0;
   font-size: 1.1rem;
+}
+
+/*--download-center--*/
+.download-center .main-image img {
+  margin: 0 auto;
+}
+.download-center .download-center-item h4 {
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.download-center .download-center-item .box {
+  background: #EAF1E9;
+  border-radius: 10px;
+  padding: 0rem 1.5rem;
+}
+.download-center .download-center-item .box .box-link {
+  min-height: 95px;
+}
+.download-center .download-center-item .box .cloud {
+  width: 40px;
+}
+.download-center .download-center-item .box .file-contain img {
+  width: 40px;
+}
+.download-center .download-center-item .box .file-contain span {
+  font-size: 1.2rem;
+  color: #6EA280;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*--footer--*/

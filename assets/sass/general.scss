@@ -2464,6 +2464,11 @@ button.back-to-top.show:active {
         h4{
             color: map_get($theme-colors, primary);
             font-family: $font-family-Bold;
+            span{
+                font-family: $font-family-base;
+                font-size: 0.849rem;
+                color: map_get($theme-colors, grayColor);
+            }
         }
     }
     .form-group{
@@ -2514,6 +2519,47 @@ button.back-to-top.show:active {
     .btn-primary{
         border-radius: 0;
         font-size: 1.1rem;
+    }
+}
+/*--download-center--*/
+.download-center{
+    .main-image{
+       img{
+        margin: 0 auto;
+       }
+    }
+    .download-center-item{
+        h4{
+            color: map_get($theme-colors, primary);
+            font-family: $font-family-Bold;
+        }
+        .box{
+            background: map_get($theme-colors, primaryBgColor);
+            border-radius: 10px;
+            padding: 0rem 1.5rem;
+            .box-link{
+                min-height: 95px;
+            }
+            
+            .cloud{
+                width: 40px;
+            }
+            .file-contain{
+                img{
+                    width: 40px;
+                }
+                span{
+                    font-size: 1.2rem;
+                    color: map_get($theme-colors,  primaryTextColor);
+                    display: -webkit-box;
+                    line-clamp: 1;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
     }
 }
 /*--footer--*/

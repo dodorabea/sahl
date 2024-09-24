@@ -14,12 +14,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
     <!-- bootstrap v5.3.3 css -->
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!--bootstrap select-->
+    <link rel="stylesheet" href="assets/bootstrap-select/css/Bootstrap-select.css" />
     <!-- Aos Animation css -->
     <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
     <!--Font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- Swiper Slider css -->
     <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!----------------intlTelInput------------------------>
+    <link rel="stylesheet" href="assets/telinput/css/intlTelInput.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +42,7 @@
     <!--Preloader-->
     <div id="preloader-background">
         <div id="circle-loader"></div>
-        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo"/>
+        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo" />
     </div>
     <!--Header-->
     <header data-lenis-prevent class="header" id="header">
@@ -138,103 +142,131 @@
         </nav>
     </header>
     <!--breadcrumb-->
-     <section class="breadcrumb d-flex align-items-center">
+    <section class="breadcrumb d-flex align-items-center">
         <div class="container">
-            <h5 class="mb-3">اتصل بنا</h5>
+            <h5 class="mb-3">انضم الينا</h5>
             <ul class="d-flex flex-wrap align-items-center gap-2">
                 <li class="breadcrumb-item">
                     <a href="index.html">الصفحة الرئيسيه</a>
                 </li>
                 <li class="breadcrumb-item">
-                    اتصل بنا
+                    انضم الينا
                 </li>
             </ul>
         </div>
     </section>
-    <!--Contact Us-->
-    <section class="contact-us" data-aos="fade-up">
-       <div class="container">
-        <div class="contact-us-info row">
-            <div class="contact-us-box position-relative text-center col-lg-4 col-md-4 col-sm-12">
-                <span class="icon-part mb-4 d-flex align-items-center justify-content-center">
-                    <img src="assets/images/icon/phone.svg" alt="icon"/>
-                </span>
-                <p class="mobile-number">
-                   <span class="d-block"> 0998887666 </span>
-                   <span class="d-block"> 0988786666 </span>
-                   <span class="d-block"> 7764649999 </span>
-                </p>
-            </div>
-            <!---->
-            <div class="contact-us-box position-relative text-center col-lg-4 col-md-4 col-sm-12">
-                <span class="icon-part mb-4 d-flex align-items-center justify-content-center">
-                    <img src="assets/images/icon/location.svg" alt="icon"/>
-                </span>
-                <p>
-                   <span class="d-block"> المنطقهة الوسطي _ الرياض _الروضة _12333 </span>
-                   <span class="d-block"> المنطقهة الشرقية _ الخبر _الراكه الجنوبية_13393 </span>
-                   <span class="d-block"> المنطقهة الجنوبية _ محايل عسير _البلد 53637 </span>
-                </p>
-            </div>
-            <!---->
-            <div class="contact-us-box position-relative text-center col-lg-4 col-md-4 col-sm-12">
-                <span class="icon-part mb-4 d-flex align-items-center justify-content-center">
-                    <img src="assets/images/icon/envolpment.svg" alt="icon"/>
-                </span>
-                <p>
-                   <span class="d-block"> 
-                        <a href="#">info@SAHL.com.sa</a>
-                    </span>
-                </p>
-            </div>
-            <!---->
-        </div>
-        <!---->
-        <div class="row justify-content-center">
-            <div class="col-lg-11 col-md-12">
-                <div class="contact-form">
-                    <h4 class="mb-3">اتصل بنا</h4>
-                    <span class="d-block mb-3 sub-title">لأي استفسارات أو مساعدة يرجي التواصل معنا من خلال قسم تفاصيل الاتصال الخاص بنا </span>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 col-md-12 mb-4">
-                            <div class="form-div">
-                                <input type="text" class="form-control" placeholder="اسم المنشأه">
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="col-lg-6 col-md-12 mb-4">
-                            <div class="form-div">
-                                <input type="text" class="form-control" placeholder="رقم الهاتف">
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="col-lg-12 col-md-12 mb-4">
-                            <div class="form-div">
-                                <input type="text" class="form-control" placeholder="البريد الالكتروني">
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="col-12 mb-4">
-                            <textarea class="form-control"  placeholder="سبب التواصل" rows="6"></textarea>
-                        </div>
-                        <!---->
-                        <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                            <a href="#" class="btn btn-primary w-100 d-block">ارسال الرسالة</a>
+    <!--Order-->
+    <section class="ask-order section-padding" data-aos="fade-up">
+        <div class="container">
+            <div class="ask-order-item mb-4">
+                <h4 class="mb-4">تعبئة البيانات</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="الاسم كامل">
                         </div>
                     </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center p-relative" data-lenis-prevent>
+                            <input id="phone" class="phone" name="phone" type="tel"
+                                placeholder="رقم الهاتف" />
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="البريد الالكتروني">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="اسم المنشأة">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="نوع المنشأة">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option  disabled selected>المدينة</option>
+                                <option>المدينة one</option>
+                                <option>المدينة two</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option  disabled selected>نوع الشريك</option>
+                                <option>نوع الشريك one</option>
+                                <option>نوع الشريك two</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="رقم السجل (ان وجد)">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-12 mb-4">
+                        <div class="form-group text-area">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="يرجي كتابة ملاحظاتك .."></textarea>
+                        </div>
+                    </div>
+                    <!---->
+                   
+                </div>
+            </div>
+            <div class="ask-order-item mb-5">
+                <h4 class="mb-3">وقت التواصل</h4>
+                <div class="row">
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option>فتره صباحية</option>
+                                <option>المدينة two</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
                     
                 </div>
             </div>
-        </div>
-        <!---->
-        <div class="row">
-            <div class="col-12">
-                <div class="responsive-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalker+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="ask-order-item mb-5">
+                <h4 class="mb-3">المستندات الداعمة <span>يمكن ارفاق (سيره ذاتية او بروفايل الشركة)</span></h4>
+                <div class="row">
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option>اختر عدة مستندات لرفعها</option>
+                                <option>المدينة two</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
+                    
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="#" class="btn btn-primary d-block w-100">
+                        ارسال
+                    </a>
                 </div>
             </div>
         </div>
-       </div>
     </section>
     <!--WatsApp floating-->
     <div class="floating-watsapp-icon">
@@ -378,10 +410,18 @@
     <script src="assets/js/lenis.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/script_lenis.js"></script>
-    <!-- Swiper JS -->
+    <!--bootstrap select-->
+    <script src="assets/bootstrap-select/js/Bootstrap-select.js"></script>
+    <!----------------------intlTelInput-------------------------->
+    <script src="assets/telinput/js/intlTelInput.js"></script>
+     <!-- Swiper JS -->
     <script src="assets/swiper/js/swiper.min.js"></script>
     <!--Main Js-->
     <script src="assets/js/main.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, { utilsScript: "assets/telinput/js/utils.js" });
+    </script>
 </body>
 
 </html>
