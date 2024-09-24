@@ -2153,6 +2153,24 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   width: 20px;
 }
 
+.swiper-pagination {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 4px;
+  border-radius: 24px;
+  background: rgb(113, 132, 121);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 45px;
+  background: #1E9B4F;
+}
+
 /*==Pagination==*/
 .pagination {
   gap: 0.5rem;
@@ -4151,6 +4169,116 @@ html[dir=ltr] .privacy-section .order-list ol {
   font-size: 1rem;
   color: #6EA280;
   font-family: "Tajawal-Regular", sans-serif;
+}
+
+/*--services-section--*/
+.services-section {
+  margin: 3rem 0 0 0;
+}
+.services-section .col:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.services-section .services-section-item h4 {
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.services-section .services-section-item p {
+  font-size: 1rem;
+  color: #6EA280;
+}
+.services-section .services-section-item.with-bg {
+  border-radius: 20px;
+  padding: 1.5rem 1rem;
+  background: rgb(234, 241, 233);
+}
+.services-section .box-swiper {
+  padding: 0 1rem;
+}
+.services-section .slider-box {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 2rem 1.5rem;
+  min-height: 230px;
+}
+.services-section .slider-box h5 {
+  font-size: 1.2rem;
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+  text-align: center;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media only screen and (min-width: 769px) {
+  .services-section .slider-box h5 {
+    font-size: 1.35rem;
+  }
+}
+.services-section .slider-box p {
+  font-size: 1rem;
+  color: #6EA280;
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.services-section .customer-review .customer-review-slider-item {
+  padding: 0;
+  border-radius: 0;
+}
+.services-section .customer-review,
+.services-section .customer-review-slider-item {
+  background: transparent;
+}
+.services-section .customer-review .services-section-item,
+.services-section .customer-review-slider-item .services-section-item {
+  background: rgb(234, 241, 233);
+  border-radius: 70px;
+  padding: 2rem 3rem;
+  min-height: 220px;
+}
+.services-section .customer-review .services-section-item ol,
+.services-section .customer-review-slider-item .services-section-item ol {
+  list-style: auto;
+}
+.services-section .customer-review .services-section-item ol li::marker,
+.services-section .customer-review-slider-item .services-section-item ol li::marker {
+  font-size: 1rem;
+  color: #6EA280;
+  font-family: "Tajawal-Regular", sans-serif;
+}
+.services-section .customer-review .services-section-item ol span,
+.services-section .customer-review-slider-item .services-section-item ol span {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #6EA280;
+}
+
+/*--foundation-steps--*/
+.foundation-steps {
+  margin: 3rem 0 2rem 0;
+}
+.foundation-steps .foundation-steps-content .item span {
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background: #EAF1E9;
+  margin: 0 auto;
+}
+.foundation-steps .foundation-steps-content .item span img {
+  width: 60px;
+}
+.foundation-steps .foundation-steps-content .item p {
+  font-family: "Tajawal-Bold", sans-serif;
+  font-size: 1.45rem;
+  color: #1E9B4F;
 }
 
 /*--footer--*/

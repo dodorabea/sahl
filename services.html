@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Sahl</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/images/fav/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!-- Aos Animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/gsap.min.js"></script>
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="vertical">
+    <!--Preloader-->
+    <div id="preloader-background">
+        <div id="circle-loader"></div>
+        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo" />
+    </div>
+    <!--Header-->
+    <header data-lenis-prevent class="header" id="header">
+        <nav class="navbar container">
+            <section class="navbar__left">
+                <a href="#" class="brand">
+                    <img src="assets/images/logo/sahl-logo.svg" alt="brand" />
+                </a>
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </div>
+            </section>
+            <section class="navbar__center" data-lenis-prevent>
+                <span class="overlay"></span>
+                <div class="menu" id="menu">
+                    <div class="menu__header">
+                        <span class="menu__arrow"><i class="fa fa-chevron-left"></i></span>
+                        <span class="menu__title"></span>
+                    </div>
+                    <ul class="menu__inner">
+                        <li class="menu__item position-relative"><a href="index.html" class="menu__link">الصفحة الرئيسية
+                            </a>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                من نحن؟
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="about.html">نبذة عنا</a></li>
+                                    <li><a href="news.html">أخر الأخبار</a></li>
+                                    <li><a href="services.html">دليل الخدمات</a></li>
+                                    <li><a href="bank-accounts.html">حساباتنا البنكية</a></li>
+                                    <li><a href="privacy.html">سياسه الخصوصيه</a></li>
+                                    <li><a href="privacy.html">الشروط والأحكام</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                الدعم
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="contact.html">اتصل بنا</a></li>
+                                    <li><a href="common-questions.html">الأسئلة الشائعة</a></li>
+                                    <li><a href="download.html">مركز التحميلات</a></li>
+                                    <li><a href="jobs.html">الوظائف</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item menu__dropdown position-relative">
+                            <a href="#" class="menu__link">
+                                الخدمات
+                                <img src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                            </a>
+                            <div class="submenu megamenu__normal" data-lenis-prevent>
+                                <ul class="submenu__list">
+                                    <li><a href="services.html">تأسيس الشركات</a></li>
+                                    <li><a href="services.html">خدمات قانونية</a></li>
+                                    <li><a href="services.html">خدمات المستثمرين</a></li>
+                                    <li><a href="services.html">برنامج حماية الأجور</a></li>
+                                    <li><a href="services.html">تسجيل العلامات التجارية</a></li>
+                                    <li><a href="services.html">اداره الخدمات الالكترونية</a></li>
+                                    <li><a href="services.html">الخدمات المالية</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!---->
+                        <li class="menu__item"><a href="package.html" class="menu__link">الباقات</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="join.html" class="menu__link">انضم إلينا</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="order.html" class="menu__link mobile-screen">اطلب خدمه</a></li>
+                        <!---->
+                        <li class="menu__item"><a href="#" class="menu__link mobile-screen">
+                                English
+                            </a></li>
+                        <!---->
+                    </ul>
+                </div>
+            </section>
+            <section class="navbar__right">
+                <a class="btn btn-order" href="order.html">اطلب خدمه</a>
+                <a href="#" class="btn btn-language">
+                    <span>English</span>
+                    <img src="assets/images/icon/lang.svg" alt="icon" />
+                </a>
+            </section>
+        </nav>
+    </header>
+    <!--breadcrumb-->
+    <section class="breadcrumb d-flex align-items-center">
+        <div class="container">
+            <h5 class="mb-3">الخدمات الحكومية الالكترونية</h5>
+            <ul class="d-flex flex-wrap align-items-center gap-2">
+                <li class="breadcrumb-item">
+                    <a href="index.html">الصفحة الرئيسيه</a>
+                </li>
+                <li class="breadcrumb-item">
+                    الخدمات الحكومية الالكترونية
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section class="services-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-11 col-md-12 col">
+                    <div class="services-section-item with-bg">
+                        <h4 class="mb-3">خدمة ادارة الخدمات الحكومية الالكترونية في السعودية</h4>
+                        <p>
+                            في مسعانا لتصدر مجال الخدمات القانونية والمحاماة . نجعل الابتكار حجر الأساس في استراتيجيتنا
+                            نهدف تطوير أفكار جديدة واستقطاب المواهب القادرة علي عكس أعلي مستويات الاحتراف والتفوق .تكمن
+                            رسالتنا في توفير خدمات قانونية متميزه وعالية الجوده .من خلال خلق بيئه تعزز النمو المستمر
+                            والتقدم الدائم نلتزم بدعم شركاتنا وعملائنا لتحقيق اهدافهم بكفاءة.مؤكدين بذلك علي اهمية دورنا
+                            القانةني والمجتمعي.
+                        </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-12 col">
+                    <div class="services-section-item">
+                        <h4 class="mb-3">
+                            فوائد الاستعانة بشركة سهل في ادارة الخدمات الحكومية
+                        </h4>
+                        <p>
+                            في اي وقت قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا
+                            محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه
+                            نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت قد تجد نفسك امام
+                            تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما نحن لا نقتصر علي تقديم
+                            النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه نقدم لك الدعم الذي يضمن
+                            حمايتك الدائمه وتقوية موقعك القانوني
+                        </p>
+                    </div>
+                </div>
+                <!---->
+
+                <div class="col-12 col">
+                    <div class="contact-form">
+                        <h4 class="mb-3">اتصل بنا</h4>
+                        <span class="d-block mb-3 sub-title">لأي استفسارات أو مساعدة يرجي التواصل معنا من خلال قسم
+                            تفاصيل الاتصال الخاص بنا </span>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-12 mb-4">
+                                <div class="form-div">
+                                    <input type="text" class="form-control" placeholder="اسم المنشأه">
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-6 col-md-12 mb-4">
+                                <div class="form-div">
+                                    <input type="text" class="form-control" placeholder="رقم الهاتف">
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-lg-12 col-md-12 mb-4">
+                                <div class="form-div">
+                                    <input type="text" class="form-control" placeholder="البريد الالكتروني">
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="col-12 mb-4">
+                                <textarea class="form-control" placeholder="سبب التواصل" rows="6"></textarea>
+                            </div>
+                            <!---->
+                            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                                <a href="#" class="btn btn-primary w-100 d-block">ارسال الرسالة</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!---->
+                <div class="col-12">
+                    <div class="customer-review section-padding" data-aos="fade-up">
+                        <div class="customer-review-slider-item position-relative">
+                            <!--js script in the end of page customer-review-slider -->
+                            <div class="swiper mySwiper customer-review-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="services-section-item mb-4">
+                                            <h4 class="mb-3">
+                                                ماقبل التأسيس
+                                            </h4>
+                                            <ol>
+                                                <li>
+                                                    <span>احصل علي استشارة مجانية من سهل </span>
+                                                </li>
+                                                <li>
+                                                    <span>حدد الهيكل القانني للشركة</span>
+                                                </li>
+                                                <li>
+                                                    <span>اختر انشطة الشركة </span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide">
+                                        <div class="services-section-item mb-4">
+                                            <h4 class="mb-3">
+                                                الوثائق المطلوبة لتأسيس
+                                                الشركه الوطنية
+                                            </h4>
+                                            <ol>
+                                                <li>
+                                                    <span>احصل علي استشارة مجانية من سهل </span>
+                                                </li>
+                                                <li>
+                                                    <span>حدد الهيكل القانني للشركة</span>
+                                                </li>
+                                                <li>
+                                                    <span>اختر انشطة الشركة </span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide">
+                                        <div class="services-section-item mb-4">
+                                            <h4 class="mb-3">
+                                                الوثائق المطلوبة لتأسيس
+                                                الشركة الأجنبية
+                                            </h4>
+                                            <ol>
+                                                <li>
+                                                    <span>احصل علي استشارة مجانية من سهل </span>
+                                                </li>
+                                                <li>
+                                                    <span>حدد الهيكل القانني للشركة</span>
+                                                </li>
+                                                <li>
+                                                    <span>اختر انشطة الشركة </span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                    <div class="swiper-slide">
+                                        <div class="services-section-item mb-4">
+                                            <h4 class="mb-3">
+                                                ماقبل التأسيس
+                                            </h4>
+                                            <ol>
+                                                <li>
+                                                    <span>احصل علي استشارة مجانية من سهل </span>
+                                                </li>
+                                                <li>
+                                                    <span>حدد الهيكل القانني للشركة</span>
+                                                </li>
+                                                <li>
+                                                    <span>اختر انشطة الشركة </span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <!---->
+
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next swiper-button">
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/icon/slider-arrow-right.svg" alt="icon">
+                                </span>
+                            </div>
+                            <div class="swiper-button-prev swiper-button">
+                                <span class="d-flex align-items-center justify-content-center">
+                                    <img src="assets/images/icon/slider-arrow.svg" alt="icon">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-12 col">
+                    <!-- text-swiper -->
+                    <div class="swiper mySwiper text-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="services-section-item">
+                                    <h4 class="mb-3">
+                                        خدمة الدعم المباشر لمشاكل الوزارات الحكومية الالكترونية
+                                    </h4>
+                                    <p>
+                                        الخدمات القانونية في المملكة العربية السعودية تشمل مجموعة واسعة من الخدمات
+                                        الموجهه لدعم الأفراد والشركات في مختلف الجوانب القانونيه في اي وقت قد تجد نفسك
+                                        امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما نحن لا
+                                        نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه
+                                        نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت قد تجد
+                                        نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما
+                                        نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا
+                                        الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت
+                                        قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا
+                                        محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل
+                                        خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في
+                                        اي وقت قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا
+                                        قانونيا محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق
+                                        بفضل خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="services-section-item">
+                                    <h4 class="mb-3">
+                                        خدمة الدعم المباشر لمشاكل الوزارات الحكومية الالكترونية
+                                    </h4>
+                                    <p>
+                                        الخدمات القانونية في المملكة العربية السعودية تشمل مجموعة واسعة من الخدمات
+                                        الموجهه لدعم الأفراد والشركات في مختلف الجوانب القانونيه في اي وقت قد تجد نفسك
+                                        امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما نحن لا
+                                        نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه
+                                        نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت قد تجد
+                                        نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما
+                                        نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا
+                                        الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت
+                                        قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا
+                                        محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل
+                                        خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في
+                                        اي وقت قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا
+                                        قانونيا محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق
+                                        بفضل خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="services-section-item">
+                                    <h4 class="mb-3">
+                                        خدمة الدعم المباشر لمشاكل الوزارات الحكومية الالكترونية
+                                    </h4>
+                                    <p>
+                                        الخدمات القانونية في المملكة العربية السعودية تشمل مجموعة واسعة من الخدمات
+                                        الموجهه لدعم الأفراد والشركات في مختلف الجوانب القانونيه في اي وقت قد تجد نفسك
+                                        امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما نحن لا
+                                        نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه
+                                        نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت قد تجد
+                                        نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما
+                                        نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا
+                                        الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت
+                                        قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا
+                                        محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل
+                                        خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في
+                                        اي وقت قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا
+                                        قانونيا محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق
+                                        بفضل خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="services-section-item">
+                                    <h4 class="mb-3">
+                                        خدمة الدعم المباشر لمشاكل الوزارات الحكومية الالكترونية
+                                    </h4>
+                                    <p>
+                                        الخدمات القانونية في المملكة العربية السعودية تشمل مجموعة واسعة من الخدمات
+                                        الموجهه لدعم الأفراد والشركات في مختلف الجوانب القانونيه في اي وقت قد تجد نفسك
+                                        امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما نحن لا
+                                        نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه
+                                        نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت قد تجد
+                                        نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما
+                                        نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا
+                                        الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت
+                                        قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا
+                                        محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل
+                                        خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في
+                                        اي وقت قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا
+                                        قانونيا محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق
+                                        بفضل خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="services-section-item">
+                                    <h4 class="mb-3">
+                                        خدمة الدعم المباشر لمشاكل الوزارات الحكومية الالكترونية
+                                    </h4>
+                                    <p>
+                                        الخدمات القانونية في المملكة العربية السعودية تشمل مجموعة واسعة من الخدمات
+                                        الموجهه لدعم الأفراد والشركات في مختلف الجوانب القانونيه في اي وقت قد تجد نفسك
+                                        امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما نحن لا
+                                        نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا الواسعه
+                                        نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت قد تجد
+                                        نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا محكما
+                                        نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل خبرتنا
+                                        الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في اي وقت
+                                        قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا قانونيا
+                                        محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق بفضل
+                                        خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك الدائمه وتقوية موقعك القانوني في
+                                        اي وقت قد تجد نفسك امام تحديات قانونية سواء كانت بسيطة او مركبة تستلزم ارشادا
+                                        قانونيا محكما نحن لا نقتصر علي تقديم النصائح فحسب بل نعمل كشركاء يثقون بالحقائق
+                                        بفضل خبرتنا الواسعه نقدم لك الدعم الذي يضمن حمايتك
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="swiper-pagination text-swiper"></div>
+                    </div>
+
+                </div>
+                <!---->
+                <div class="col-12">
+                    <div class="services-section-item mb-4">
+                        <h4 class="mb-3">
+                            ماذا نقدم لكم؟
+                        </h4>
+                        <p>
+                            تقدم شركة سهل للخدمات مجموعة كبيرة من الخدمات تصل الي اكثر من 500 خدمة التي تحتاجها المنشأت
+                            داخل المملكه العربية السعودية سواء عبر فريقها أو عبر الشراكة مع شركاء سهل حيث تمتلك فريق عمل
+                            وشركاء مؤهلين لانجاز الخدمات بدقة عالية وفي وقت قصير
+                        </p>
+                    </div>
+                    <!-- box-swiper -->
+                    <div class="swiper mySwiper box-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <h5 class="mb-4">تسهيلات الحصول علي
+                                        التراخيص</h5>
+                                    <p>
+                                        نقدم تسهيلات للمستثمرين الأجانب للحصول علي التراخيص اللازمة لبدء أعمالهم بسرعة
+                                        وكفاءة عالية
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <h5 class="mb-4">مناطق اقتصادية خاصة</h5>
+                                    <p>ايجاد مناطق خاصة تقدم حوافز ضريبية وتسهيلات جمركية للشركات العاملة فيها</p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <h5 class="mb-4">تسهيلات الحصول علي
+                                        التراخيص</h5>
+                                    <p>
+                                        نقدم تسهيلات للمستثمرين الأجانب للحصول علي التراخيص اللازمة لبدء أعمالهم بسرعة
+                                        وكفاءة عالية
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <h5 class="mb-4">تسهيلات الحصول علي
+                                        التراخيص</h5>
+                                    <p>
+                                        نقدم تسهيلات للمستثمرين الأجانب للحصول علي التراخيص اللازمة لبدء أعمالهم بسرعة
+                                        وكفاءة عالية
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="swiper-slide">
+                                <div class="slider-box">
+                                    <h5 class="mb-4">تسهيلات الحصول علي
+                                        التراخيص</h5>
+                                    <p>
+                                        نقدم تسهيلات للمستثمرين الأجانب للحصول علي التراخيص اللازمة لبدء أعمالهم بسرعة
+                                        وكفاءة عالية
+                                    </p>
+                                </div>
+                            </div>
+                            <!---->
+                        </div>
+                        <div class="swiper-pagination box-swiper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--foundation-steps-->
+    <section class="foundation-steps" data-aos="fade-up">
+        <div class="container">
+            <div class="title-section">
+                <h3>خطوات التأسيس</h3>
+            </div>
+            <div class="foundation-steps-content d-flex flex-wrap justify-content-center gap-5">
+                <div class="item">
+                    <span class="d-flex flex-wrap align-items-center justify-content-center mb-3">
+                        <img src="assets/images/icon/planning.svg" alt="icon" />
+                    </span>
+                    <p class="text-center">التخطيط</p>
+                </div>
+                <!---->
+                <div class="item">
+                    <span class="d-flex flex-wrap align-items-center justify-content-center mb-3">
+                        <img src="assets/images/icon/wallet-bank.svg" alt="icon" />
+                    </span>
+                    <p class="text-center">فتح حساب بنكي</p>
+                </div>
+                <!---->
+                <div class="item">
+                    <span class="d-flex flex-wrap align-items-center justify-content-center mb-3">
+                        <img src="assets/images/icon/establishment.svg" alt="icon" />
+                    </span>
+                    <p class="text-center">التأسيس</p>
+                </div>
+                <!---->
+                <div class="item">
+                    <span class="d-flex flex-wrap align-items-center justify-content-center mb-3">
+                        <img src="assets/images/icon/improve.svg" alt="icon" />
+                    </span>
+                    <p class="text-center">المتابعة والتحسين</p>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+    <!--help-offer-->
+    <section class="help-offer section-padding" data-aos="fade-up">
+        <div class="container">
+            <div class="title-section">
+                <h3>كيف يمكننا المساعدة ؟</h3>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            من هي شركه سهل للخدمات ؟
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            لماذا تختار سهل للخدمات ؟
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            هل تقوم سهل للخدمات باداره الخدمات الالكترونيه لجميع المنصات الحكوميه ؟
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ماهي أنواع المنشأت التي تقدم شركه سهل الخدمات لها ؟
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شركة استشارية تأسست في مجال خدمات الأعمال والدعم المباشر لقطاع الأعمال وتقدم توجيهات
+                                وحلولا متكاملة وسريعة لجميع مشاكل المؤسسات والشركات
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <a href="common-questions.html"
+                        class="btn btn-primary btn-show-package d-flex align-items-center justify-content-center gap-3 mt-5">
+                        <span>عرض المزيد</span>
+                        <img src="assets/images/icon/arrow-left.svg" alt="icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--WatsApp floating-->
+    <div class="floating-watsapp-icon">
+        <a href="tel:+0998887666">
+            <img src="assets/images/global-image/watsapp.svg" alt="icon" />
+        </a>
+    </div>
+    <!---->
+    <div class="contentDiv" id="content">
+        <button class="back-to-top" type="button"></button>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container d-flex justify-content-between flex-wrap">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/sahl-logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <!---->
+                <div class="quick-links">
+                    <h5 class="mb-4">روابط هامة</h5>
+                    <ul>
+                        <li>
+                            <a href="order.html">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>اطلب خدمة </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>من نحن؟</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="common-questions.html">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>الأسئلة الشائعة</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="join.html">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span> انضم الينا </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <img src="assets/images/icon/arrow-footer.svg" alt="icon">
+                                <span>اتصل بنا </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="quick-links">
+                    <h5 class="mb-4">اتصل بنا</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/icon/location.svg" alt="icon" />
+                                <ol>
+                                    <li>
+                                        <span>المنطقهة الوسطي _ الرياض _الروضة _12333</span>
+                                    </li>
+                                    <li>
+                                        <span> المنطقهة الشرقية _ الخبر _الراكه الجنوبية_13393</span>
+                                    </li>
+                                    <li>
+                                        <span>المنطقهة الجنوبية _ محايل عسير _البلد 53637</span>
+                                    </li>
+                                </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="d-flex gap-3">
+                                <img src="assets/images/icon/phone.svg" alt="icon" />
+                                <span class="d-flex align-items-center gap-3 flex-wrap">
+                                    <a href="tel:+0998887666">0998887666</a>
+                                    <a href="tel:+7764649999">7764649999</a>
+                                    <a href="tel:+09887666">09887666</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="mailto:info@SAHL.com.sa">
+                                <img src="assets/images/icon/envolpment.svg" alt="icon" />
+                                <span>info@SAHL.com.sa</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!---->
+                <div class="quick-links social-links">
+                    <h5 class="mb-4">تواصل معنا عبر مواقعنا</h5>
+                    <ul class="d-flex align-items-center justify-content-center gap-3">
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-youtube.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-twitter.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-facebook.svg" alt="icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="d-flex align-items-center justify-content-center">
+                                <img src="assets/images/icon/footer-insta.svg" alt="icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between">
+                <p>
+                    شركه سهل للخدمات موثقه لدي وزاره التجاره .بسجل تجاري رقم 1009874.
+                </p>
+                <p>
+                    جميع الحقوق محفوظة لشركة سهل للخدمات 2024
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/aos/js/aos.js"></script>
+    <!--ScrollTrigger-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--lenis-->
+    <script src="assets/js/lenis.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/script_lenis.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!--Main Js-->
+    <script src="assets/js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper.text-swiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination.text-swiper",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- Initialize customer-review-slider -->
+    <script>
+        var reviewSlider = new Swiper(".mySwiper.customer-review-slider", {
+            autoplay: false,
+            loop: false,
+            spaceBetween: 10,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                400: {
+                    slidesPerView: 1,
+                },
+                880: {
+                    slidesPerView: 2,
+                },
+                1025: {
+                    slidesPerView: 2,
+                },
+                1366: {
+                    slidesPerView: 3,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.swiper-button",
+                prevEl: ".swiper-button-prev.swiper-button",
+            },
+        });
+    </script>
+    <!--box-swiper-->
+    <script>
+        var swiper = new Swiper(".mySwiper.box-swiper", {
+            spaceBetween: 30,
+            slidesPerView: 1,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                400: {
+                    slidesPerView: 1,
+                },
+                880: {
+                    slidesPerView: 2,
+                },
+                1025: {
+                    slidesPerView: 2,
+                },
+                1366: {
+                    slidesPerView: 3,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination.box-swiper",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
