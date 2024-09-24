@@ -4356,4 +4356,17 @@ footer .footer-bottom p {
   footer .footer-bottom p {
     font-size: 1rem;
   }
+}
+
+html[dir=ltr] .subscribe-section {
+  backface-visibility: visible;
+  transform: perspective(140px) rotateY(180deg);
+}
+html[dir=ltr] .subscribe-section .row {
+  backface-visibility: visible;
+  transform: perspective(140px) rotateY(180deg);
+}
+html[dir=ltr] .btn img {
+  backface-visibility: visible;
+  transform: perspective(140px) rotateY(180deg);
 }/*# sourceMappingURL=general.css.map */
