@@ -3029,9 +3029,21 @@ html[dir="ltr"]{
         transform: perspective(140px) rotateY(180deg);
         }
     }
-    .btn img
+    .btn img,
+    .download-center .main-image img
     {
         backface-visibility: visible;
         transform: perspective(140px) rotateY(180deg);
+    }
+    .copy-text button:before {
+        content: "Copied!";
+    }
+    .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+        left: auto;
+        right: 0;
+    }
+    .iti__selected-flag{
+        right: 0;
+        left: unset;
     }
 }

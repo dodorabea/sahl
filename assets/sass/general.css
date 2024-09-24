@@ -4366,7 +4366,19 @@ html[dir=ltr] .subscribe-section .row {
   backface-visibility: visible;
   transform: perspective(140px) rotateY(180deg);
 }
-html[dir=ltr] .btn img {
+html[dir=ltr] .btn img,
+html[dir=ltr] .download-center .main-image img {
   backface-visibility: visible;
   transform: perspective(140px) rotateY(180deg);
+}
+html[dir=ltr] .copy-text button:before {
+  content: "Copied!";
+}
+html[dir=ltr] .iti--allow-dropdown .iti__flag-container, html[dir=ltr] .iti--separate-dial-code .iti__flag-container {
+  left: auto;
+  right: 0;
+}
+html[dir=ltr] .iti__selected-flag {
+  right: 0;
+  left: unset;
 }/*# sourceMappingURL=general.css.map */
