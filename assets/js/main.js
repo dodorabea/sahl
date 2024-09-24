@@ -1,23 +1,12 @@
 (function ($) {
   "use strict";
-  document.documentElement.classList.add("js");
   /*====Dom is loaded==== */
-  // jQuery(document).ready(function ($) {
-  //   setTimeout(function () {
-  //     $('#preloader').fadeOut('slow', function () {
-  //       $(this).remove();
-  //     });
-  //   }, 2000);
-  // });
-
-  var $loader = document.querySelector('.loader');
-  var $loaderSpan = document.querySelector('.loader-span');
+  var $loader = document.querySelector('#preloader-background');
   
   window.onload = function() {
     setTimeout(function() {
-      $loader.classList.remove('loader');
-      $loaderSpan.classList.remove('loader-span');
-    }, 2000); 
+      $loader.remove(); 
+    }); 
   };
   /*====Back to top==== */
   var amountScrolled = 200;

@@ -14,12 +14,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
     <!-- bootstrap v5.3.3 css -->
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!--bootstrap select-->
+    <link rel="stylesheet" href="assets/bootstrap-select/css/Bootstrap-select.css" />
     <!-- Aos Animation css -->
     <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
     <!--Font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- Swiper Slider css -->
     <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!----------------intlTelInput------------------------>
+    <link rel="stylesheet" href="assets/telinput/css/intlTelInput.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,10 +39,10 @@
 </head>
 
 <body id="vertical">
-   <!--Preloader-->
+    <!--Preloader-->
     <div id="preloader-background">
         <div id="circle-loader"></div>
-        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo"/>
+        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo" />
     </div>
     <!--Header-->
     <header data-lenis-prevent class="header" id="header">
@@ -119,7 +123,7 @@
                         <!---->
                         <li class="menu__item"><a href="#" class="menu__link">انضم إلينا</a></li>
                         <!---->
-                        <li class="menu__item"><a href="order.htmllass="menu__link mobile-screen">اطلب خدمه</a></li>
+                        <li class="menu__item"><a href="order.html" class="menu__link mobile-screen">اطلب خدمه</a></li>
                         <!---->
                         <li class="menu__item"><a href="#" class="menu__link mobile-screen">
                                 English
@@ -140,199 +144,121 @@
     <!--breadcrumb-->
     <section class="breadcrumb d-flex align-items-center">
         <div class="container">
-            <h5 class="mb-3">أحدث الأخبار</h5>
-            <div class="row align-items-center">
-                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12">
-                    <ul class="d-flex flex-wrap align-items-center gap-2">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">الصفحة الرئيسيه</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            أخر الأخبار
-                        </li>
-                    </ul>
-                </div>
-                <!--Filter-->
-                <div class="xxl-5 col-xl-5 col-lg-5 col-md-12">
-                    <div class="search-part d-flex align-items-center gap-3">
-                        <div class="form-group">
-                            <div class="input-group d-flex align-items-center gap-2">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="basic-addon1">
-                                    <img src="assets/images/icon/search.svg" alt="icon"/>
-                                  </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="ابحث... " aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
+            <h5 class="mb-3">اطلب خدمه</h5>
+            <ul class="d-flex flex-wrap align-items-center gap-2">
+                <li class="breadcrumb-item">
+                    <a href="index.html">الصفحة الرئيسيه</a>
+                </li>
+                <li class="breadcrumb-item">
+                    اطلب خدمه
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Order-->
+    <section class="ask-order section-padding" data-aos="fade-up">
+        <div class="container">
+            <div class="ask-order-item mb-5">
+                <h4 class="mb-4">بيانات المنشأة</h4>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="الاسم ثلاثي">
                         </div>
-                        <div class="sort-search">
-                            <div class="dropdown">
-                                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/images/icon/Sort.svg" alt="icon"/>
-                                </button>
-                                <ul class="dropdown-menu ">
-                                  <li><a class="dropdown-item" href="#">المسؤوليه الاجتماعيه</a></li>
-                                  <li><a class="dropdown-item" href="#">نشره الأعمال </a></li>
-                                  <li><a class="dropdown-item" href="#">اخبار سهل</a></li>
-                                </ul>
-                              </div>
-                            
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center p-relative" data-lenis-prevent>
+                            <input id="phone" class="phone" name="phone" type="tel"
+                                placeholder="رقم الهاتف" />
                         </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="البريد الالكتروني">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="اسم المنشأة">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center">
+                            <input type="email" class="form-control" placeholder="نوع المنشأة">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option  disabled selected>المدينة</option>
+                                <option>المدينة one</option>
+                                <option>المدينة two</option>
+                            </select>  
+                        </div>                 
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-     <!--recent-news-->
-     <section class="recent-news section-padding">
-        <div class="container">
+            <div class="ask-order-item mb-5">
+                <h4 class="mb-4">بيانات الخدمة</h4>
+                <div class="row">
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <label class="form-label mb-2">القسم العام</label>
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option  disabled selected>اختر القسم العام</option>
+                                <option>المدينة one</option>
+                                <option>المدينة two</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <label class="form-label mb-2">نوع الخدمة</label>
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option  disabled selected>اختر نوع الخدمة</option>
+                                <option>المدينة one</option>
+                                <option>المدينة two</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
+                    <div class="col-12 mb-4">
+                        <label class="form-label mb-2">كيف يمكننا المساعدة</label>
+                        <div class="form-group text-area">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="اكتب رسالتك"></textarea>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                        <label class="form-label mb-2">وقت التواصل</label>
+                        <div class="form-group d-flex align-items-center" data-lenis-prevent>
+                            <select class="selectpicker">
+                                <option>فتره صباحية</option>
+                                <option>فتره مسائية</option>
+                            </select>  
+                        </div>                 
+                    </div>
+                    <!---->
+                </div>
+            </div>
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="recent-news-item">
-                        <div class="header-part">
-                            <img src="assets/images/news/news1.png" alt="image" />
-                        </div>
-                        <div class="body-part h-100">
-                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 14يوليو 2024</span>
-                            <h4 class="mb-3">التزام صاحب العمل </h4>
-                            <p>في بيئه العمل لمخاطر عدة تتسبب في اصابته باصابه عمل او مرض مهني ويأتي هنا دور صاحب العمل
-                                في تحمل المسؤولية الكامله لعلاج هذه الاصابات</p>
-                        </div>
-                        <div class="footer-part">
-                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="recent-news-item">
-                        <div class="header-part">
-                            <img src="assets/images/news/news2.png" alt="image" />
-                        </div>
-                        <div class="body-part h-100">
-                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 15يوليو 2024</span>
-                            <h4 class="mb-3">أهمية اتخاذ الاحتياطات</h4>
-                            <p>السلامة في مكان العمل هي أولوية قصوي لكل صاحب عمل ولاسيما عندما يتعلق الأمر بالوقايه من
-                                الحرائق. تعتبر الحرائق من اخطر الحوادث التي قد تحدث في اي </p>
-                        </div>
-                        <div class="footer-part">
-                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="recent-news-item">
-                        <div class="header-part">
-                            <img src="assets/images/news/news1.png" alt="image" />
-                        </div>
-                        <div class="body-part h-100">
-                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 14يوليو 2024</span>
-                            <h4 class="mb-3">التزام صاحب العمل </h4>
-                            <p>في بيئه العمل لمخاطر عدة تتسبب في اصابته باصابه عمل او مرض مهني ويأتي هنا دور صاحب العمل
-                                في تحمل المسؤولية الكامله لعلاج هذه الاصابات</p>
-                        </div>
-                        <div class="footer-part">
-                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="recent-news-item">
-                        <div class="header-part">
-                            <img src="assets/images/news/news2.png" alt="image" />
-                        </div>
-                        <div class="body-part h-100">
-                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 15يوليو 2024</span>
-                            <h4 class="mb-3">أهمية اتخاذ الاحتياطات</h4>
-                            <p>السلامة في مكان العمل هي أولوية قصوي لكل صاحب عمل ولاسيما عندما يتعلق الأمر بالوقايه من
-                                الحرائق. تعتبر الحرائق من اخطر الحوادث التي قد تحدث في اي </p>
-                        </div>
-                        <div class="footer-part">
-                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="recent-news-item">
-                        <div class="header-part">
-                            <img src="assets/images/news/news1.png" alt="image" />
-                        </div>
-                        <div class="body-part h-100">
-                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 14يوليو 2024</span>
-                            <h4 class="mb-3">التزام صاحب العمل </h4>
-                            <p>في بيئه العمل لمخاطر عدة تتسبب في اصابته باصابه عمل او مرض مهني ويأتي هنا دور صاحب العمل
-                                في تحمل المسؤولية الكامله لعلاج هذه الاصابات</p>
-                        </div>
-                        <div class="footer-part">
-                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-                    <div class="recent-news-item">
-                        <div class="header-part">
-                            <img src="assets/images/news/news2.png" alt="image" />
-                        </div>
-                        <div class="body-part h-100">
-                            <span class="d-block mb-3">بواسطة <span>مشرف</span> | 15يوليو 2024</span>
-                            <h4 class="mb-3">أهمية اتخاذ الاحتياطات</h4>
-                            <p>السلامة في مكان العمل هي أولوية قصوي لكل صاحب عمل ولاسيما عندما يتعلق الأمر بالوقايه من
-                                الحرائق. تعتبر الحرائق من اخطر الحوادث التي قد تحدث في اي </p>
-                        </div>
-                        <div class="footer-part">
-                            <a href="news-details.html" class="btn btn-link">قراءه المزيد</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 mt-5">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-     <!--Subscribe-->
-     <section class="subscribe-section section-padding d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <h4 class="mb-4">شركه سهل للخدات العامة وحلول الأعمال</h4>
-                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
-                    <div class="form-control-div">
-                        <label class="d-block text-center mb-4">
-                            اشترك معنا لتصلك اخر الأخبار
-                        </label>
-                        <div class="input-group position-relative mb-3">
-                            <input type="text" class="form-control" placeholder="ادخل عنوان البريد الالكتروني"
-                                aria-label="" aria-describedby="basic-addon1">
-                            <div class="input-group-prepend d-flex align-items-center">
-                                <button class="btn btn-primary" type="button">الاشترك</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="#" class="btn btn-primary d-block w-100">
+                        ارسال
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-     <!--WatsApp floating-->
-     <div class="floating-watsapp-icon">
+    <!--WatsApp floating-->
+    <div class="floating-watsapp-icon">
         <a href="tel:+0998887666">
             <img src="assets/images/global-image/watsapp.svg" alt="icon" />
         </a>
@@ -473,10 +399,18 @@
     <script src="assets/js/lenis.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/script_lenis.js"></script>
-    <!-- Swiper JS -->
+    <!--bootstrap select-->
+    <script src="assets/bootstrap-select/js/Bootstrap-select.js"></script>
+    <!----------------------intlTelInput-------------------------->
+    <script src="assets/telinput/js/intlTelInput.js"></script>
+     <!-- Swiper JS -->
     <script src="assets/swiper/js/swiper.min.js"></script>
     <!--Main Js-->
     <script src="assets/js/main.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, { utilsScript: "assets/telinput/js/utils.js" });
+    </script>
 </body>
 
 </html>
