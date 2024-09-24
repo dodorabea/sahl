@@ -14,6 +14,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
     <!-- bootstrap v5.3.3 css -->
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css">
+    <!--bootstrap select-->
+    <link rel="stylesheet" href="assets/bootstrap-select/css/Bootstrap-select.css" />
     <!-- Aos Animation css -->
     <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
     <!--Font-awesome-->
@@ -38,7 +40,7 @@
     <!--Preloader-->
     <div id="preloader-background">
         <div id="circle-loader"></div>
-        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo"/>
+        <img id="centre-logo" src="assets/images/logo/sahl-logo.svg" alt="logo" />
     </div>
     <!--Header-->
     <header data-lenis-prevent class="header" id="header">
@@ -140,130 +142,133 @@
     <!--breadcrumb-->
     <section class="breadcrumb d-flex align-items-center">
         <div class="container">
-            <h5 class="mb-3">أحدث الأخبار</h5>
-            <div class="row align-items-center">
-                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12">
-                    <ul class="d-flex flex-wrap align-items-center gap-2">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">الصفحة الرئيسيه</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            تفاصيل الخبر 
-                        </li>
-                    </ul>
-                </div>
-                <!--Filter-->
-                <div class="xxl-5 col-xl-5 col-lg-5 col-md-12">
-                    <div class="search-part d-flex align-items-center gap-3">
-                        <div class="form-group">
-                            <div class="input-group d-flex align-items-center gap-2">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text" id="basic-addon1">
-                                    <img src="assets/images/icon/search.svg" alt="icon"/>
-                                  </span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="ابحث... " aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                        </div>
-                        <div class="sort-search">
-                            <div class="dropdown">
-                                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="assets/images/icon/Sort.svg" alt="icon"/>
-                                </button>
-                                <ul class="dropdown-menu ">
-                                  <li><a class="dropdown-item" href="#">المسؤوليه الاجتماعيه</a></li>
-                                  <li><a class="dropdown-item" href="#">نشره الأعمال </a></li>
-                                  <li><a class="dropdown-item" href="#">اخبار سهل</a></li>
-                                </ul>
-                              </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h5 class="mb-3">شروط الاستخدام</h5>
+            <ul class="d-flex flex-wrap align-items-center gap-2">
+                <li class="breadcrumb-item">
+                    <a href="index.html">الصفحة الرئيسيه</a>
+                </li>
+                <li class="breadcrumb-item">
+                    شروط الاستخدام
+                </li>
+            </ul>
         </div>
     </section>
-     <!--News Details-->
-     <section class="news-details section-padding">
+    <!--Privacy Section-->
+    <section class="privacy-section">
         <div class="container">
-            <div class="row">
-                <div class="news-details-item">
-                    <div class="header-part mb-3">
-                        <img class="d-block w-100" src="assets/images/news/news1.png" alt="news Image"/>
-                    </div>
-                    <div class="body-part">
-                        <span class="d-block mb-3">بواسطة <span>مشرف</span> - 15يوليو 2024</span>
-                        <div class="item mb-4">
-                            <h5>التزام صاحب العمل تجاه اصابات العمل والأمراض المهنية </h5>
-                            <p>
-                                اصابات العمل في بيئه العمل شئ اساسي قد يتعرض العامل لمخاطر عده تتسبب في اصابته باصابة عمل او مرض مهني وهنا يأتي دور صاحب العمل في تحمل المسؤولية الكاملة لعلاجه وذلك ضمن التزامات قانونية واخلاقية تضمن سلامة ورفاهية العاملين.
-                            </p>
-                        </div>
-                        <!---->
-                        <div class="item mb-4">
-                            <h5>التزامات صاحب العمل في اصابات العمل</h5>
-                            <p>
-                                عند اصابة العامل ب اصابة عمل أو مرض مهني يلتزم صاحب العمل بتوفير العلاج اللازم ويتحمل جميع النفقات المرتبطة بذلك يشمل هذا الالتزام تحمل تكاليف العلاج سواء كانت بطريقة مباشرة او غير مباشرة يتضمن العلاج الاقامة في المستشفي واجراء الفحوص والتحاليل الطبية والأشعه وتوفير الأجهزه التعويضية اللازمة بالاضافه الي نفقات الانتقال الي اماكن العلاج
-                            </p>
-                        </div>
-                        <!---->
-                        <div class="item mb-4">
-                            <h5>العلاج والاقامه في المستشفي </h5>
-                            <p>
-                                يتعين علي صاحب العمل ضمان وتوفير افضل رعاية طبية للعامل المصاب بما في ذلك الاقامة في المستشفي عند الضروره هذه الرعاية تشمل جميع مراحل العلاج بدءا من الفحوص الطبية الاوليه والتشخيص مرورا بالعلاج الفعلي وصولا الي المتابعه المستمرة لضمان الشفاء التام .
-                            </p>
-                        </div>
-                        <!---->
-                        <div class="item mb-4">
-                            <h5>حقوق العمال في حاله الاصابة</h5>
-                           <p>ان التزام صاحب العمل بعلاج اصابات العمل والأمراض المهنية يعد من اساسيات الحفاظ علي بيئة عمل صحية وامنه من خلال تحمل جميع النفقات اللازمه لعلاج وتوفير الرعاية الشاملة بعكس صاحب العمل اهتمامه بسلامة ورفاهية العاملين مما يعزز من ثقه العمال ويزيد من انتاجاهم واستقرارهم الوظيفي ويمكنك اللجوء  دائما الي سهل في خدمات الاستشارات القانونية والخدمات القانونية.</p>
-                            <p>
-                                ان التزام صاحب العمل بعلاج اصابات العمل والأمراض المهنية يعد من اساسيات الحفاظ علي بيئة عمل صحية وامنه من خلال تحمل جميع النفقات اللازمه لعلاج وتوفير الرعاية الشاملة بعكس صاحب العمل اهتمامه بسلامة ورفاهية العاملين مما يعزز من ثقه العمال ويزيد من انتاجاهم واستقرارهم الوظيفي ويمكنك اللجوء  دائما الي سهل في خدمات الاستشارات القانونية  <a href="#">والخدمات القانونية</a>.
-                            </p>
-                        </div>
-                        <!---->
-                    </div>
-                    <div class="footer-part">
-                        <div class="social-media d-flex align-items-center justify-content-center">
-                            <a href="#" class="facebook d-flex align-items-center justify-content-center">
-                                <img src="assets/images/icon/fb.svg" alt="icon"/>
-                            </a>
-                            <a href="#" class="insta d-flex align-items-center justify-content-center">
-                                <img src="assets/images/icon/insta.svg" alt="icon"/>
-                            </a>
-                            <a href="#" class="twitter d-flex align-items-center justify-content-center">
-                                <img src="assets/images/icon/tw.svg" alt="icon"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <ol class="order-list">
+                <li>
+                    <h4>شروط الاستخدام</h4>
+                    <span>يقر المستخدم لمنصة سهل بالامتناع عما يلي:</span>
+                    <ol>
+                        <li>
+                            <span>توفير أو تحميل ملفات تحتوي علي برمجيات أو مواد أو بيانات أو معلومات أخري ليست مملوكة
+                                لك أو لا تملك ترخيصا بشأنها</span>
+                        </li>
+                        <li>
+                            <span>
+                                استخدام هذه المنصة بأي طريقة لارسال اي بريد تجاري أو غير مرغوب فيه أو اي اساءه استخدام
+                                من هذا النوع .
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                رفع أو تحميل ملفات علي هذه المنصة تحتوي علي فيروسات أو بيانات تالفة او اي برمجيات خبيثه
+                                او القيام بكل ما من شأنه التأثير علي سلامة المعلومات في المنصة أو موثوقينها أو استمرار
+                                توفيرها .
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                نشر أو اعلان أو توزيع أو تعميم مواد أو معلومات تحتوي تشويها للسمعه أو انتهاكا للقوانين
+                                أو مواد اباحية أو بذيئة أو مخالفة للأداب العامة أو اي مواد أو معلومات غير قانونية.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                استخدام أي وسيلة أو برنامج أو اجراء لاعتراض أو محاولة اعتراض التشغيل الصحيح
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                القيام بأي اجراء يفرض حملا غير معقول أو كبير بصورة غير مناسبة علي البنية التحتية للمنصة.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                كل ما يعد مخالفة لأنظمة المملكه العربيه السعودية وعلي وجه الخصوص نظام مكافحه الجرائم
+                                المعلوماتية ونظام حماية البيانات الشخصية ونظام التعاملات الالكترونية.
+                            </span>
+                        </li>
+                    </ol>
+                </li>
+                <!---->
+                <li>
+                    <h4>
+                        استخدام الروابط
+                    </h4>
+                    <span>
+                        يمنع انشاء او نقل او نسخ اي روابط الكترونية تتعلق بالبوابة أو نشر هذه الروابط في مواقع أخري
+                        باستثناء نشر الروابط الفعلية للمنصة في المواقع التي لا تتعارض اهدافها وتوجهاتها مع أهداف وتوجهات
+                        وسياسات سهل
+                    </span>
+                    <ol>
+                        <li>
+                            <span>توفير أو تحميل ملفات تحتوي علي برمجيات أو مواد أو بيانات أو معلومات أخري ليست مملوكة
+                                لك أو لا تملك ترخيصا بشأنها</span>
+                        </li>
+                        <li>
+                            <span>
+                                استخدام هذه المنصة بأي طريقة لارسال اي بريد تجاري أو غير مرغوب فيه أو اي اساءه استخدام
+                                من هذا النوع .
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                رفع أو تحميل ملفات علي هذه المنصة تحتوي علي فيروسات أو بيانات تالفة او اي برمجيات خبيثه
+                                او القيام بكل ما من شأنه التأثير علي سلامة المعلومات في المنصة أو موثوقينها أو استمرار
+                                توفيرها .
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                نشر أو اعلان أو توزيع أو تعميم مواد أو معلومات تحتوي تشويها للسمعه أو انتهاكا للقوانين
+                                أو مواد اباحية أو بذيئة أو مخالفة للأداب العامة أو اي مواد أو معلومات غير قانونية.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                استخدام أي وسيلة أو برنامج أو اجراء لاعتراض أو محاولة اعتراض التشغيل الصحيح
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                القيام بأي اجراء يفرض حملا غير معقول أو كبير بصورة غير مناسبة علي البنية التحتية للمنصة.
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                كل ما يعد مخالفة لأنظمة المملكه العربيه السعودية وعلي وجه الخصوص نظام مكافحه الجرائم
+                                المعلوماتية ونظام حماية البيانات الشخصية ونظام التعاملات الالكترونية.
+                            </span>
+                        </li>
+                    </ol>
+                </li>
+                <!---->
+            </ol>
+            <h4>التغييرات علي سياسه خصوصية سهل</h4>
+            <span>
+                قد تقوم “سهل” بالتعديل علي سياسة الخصوصية من وقت لاخر اذا اجرينا اي تغييرات جوهرية باي طريقة من الطرق
+                التي نستخدم بها معلوماتك الشخصية فسنخطرك عن طريق نشر اعلان بارز علي صفحات الويب الخاصه بنا او عن طريق
+                البريد الالكتروني وسيكون لديك خيار الموافقه عليما اذا كنا سنستخدم المعلوماتبهذه الطريقه المختلفه ام لا .
+
+                شكرا لك علي الوقت الذي استغرقته لفهم سياسة خصوصية سهل
+            </span>
+            <p>شكرا لك علي الوقت الذي استغرقته لفهم سياسة خصوصية سهل</p>
         </div>
     </section>
-    <!--Subscribe-->
-    <section class="subscribe-section section-padding d-flex align-items-center">
-        <div class="container">
-            <div class="row">
-                <h4 class="mb-4">شركه سهل للخدات العامة وحلول الأعمال</h4>
-                <div class="col-xxl-4 col-xl-4 col-lg-5 col-md-6 col-sm-12">
-                    <div class="form-control-div">
-                        <label class="d-block text-center mb-4">
-                            اشترك معنا لتصلك اخر الأخبار
-                        </label>
-                        <div class="input-group position-relative mb-3">
-                            <input type="text" class="form-control" placeholder="ادخل عنوان البريد الالكتروني"
-                                aria-label="" aria-describedby="basic-addon1">
-                            <div class="input-group-prepend d-flex align-items-center">
-                                <button class="btn btn-primary" type="button">الاشترك</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <!--WatsApp floating-->
-     <div class="floating-watsapp-icon">
+    <!--WatsApp floating-->
+    <div class="floating-watsapp-icon">
         <a href="tel:+0998887666">
             <img src="assets/images/global-image/watsapp.svg" alt="icon" />
         </a>
@@ -404,6 +409,8 @@
     <script src="assets/js/lenis.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/script_lenis.js"></script>
+    <!--bootstrap select-->
+    <script src="assets/bootstrap-select/js/Bootstrap-select.js"></script>
     <!-- Swiper JS -->
     <script src="assets/swiper/js/swiper.min.js"></script>
     <!--Main Js-->

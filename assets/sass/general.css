@@ -2102,7 +2102,8 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   color: #718479;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: #1E9B4F;
 }
 
@@ -4024,7 +4025,8 @@ button.back-to-top.show:active {
 .bank-account .bank-account-box .box-header img {
   width: 60px;
 }
-.bank-account .bank-account-box .box-header p, .bank-account .bank-account-box .box-header .eng-bank-name {
+.bank-account .bank-account-box .box-header p,
+.bank-account .bank-account-box .box-header .eng-bank-name {
   font-size: 1.3rem;
   color: #1E9B4F;
   font-family: "Tajawal-Bold", sans-serif;
@@ -4110,6 +4112,45 @@ html[dir=ltr] .bank-account .copy-text button:before {
 }
 .bank-account .copy-text.active button:before {
   display: block;
+}
+
+/*--privacy-section--*/
+.privacy-section li::marker {
+  font-size: calc(1.275rem + 0.3vw);
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+}
+.privacy-section h4 {
+  color: #1E9B4F;
+  font-family: "Tajawal-Bold", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.privacy-section span {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #6EA280;
+}
+.privacy-section p {
+  font-size: 1.3rem;
+  color: #1E9B4F;
+}
+.privacy-section .order-list {
+  list-style: auto;
+}
+.privacy-section .order-list ol {
+  list-style: auto;
+}
+html[dir=rtl] .privacy-section .order-list ol {
+  padding-right: 1rem;
+}
+html[dir=ltr] .privacy-section .order-list ol {
+  padding-left: 1rem;
+}
+.privacy-section .order-list ol li::marker {
+  font-size: 1rem;
+  color: #6EA280;
+  font-family: "Tajawal-Regular", sans-serif;
 }
 
 /*--footer--*/

@@ -433,7 +433,8 @@ h6 {
         }
     }
 }
-.bootstrap-select>.dropdown-toggle{
+
+.bootstrap-select>.dropdown-toggle {
     padding: 0 1rem;
     min-height: 50px;
     background: transparent !important;
@@ -442,24 +443,29 @@ h6 {
     border-color: unset !important;
     outline: none !important;
     box-shadow: none !important;
-    &:focus-within{
+
+    &:focus-within {
         border: 0 !important;
         outline: 0 !important;
     }
-    .filter-option-inner-inner{
+
+    .filter-option-inner-inner {
         outline: 0 !important;
         color: #718479;
     }
 }
-.dropdown-item.active, .dropdown-item:active {
+
+.dropdown-item.active,
+.dropdown-item:active {
     background-color: map_get($theme-colors, primary);
 }
-.form-group{
+
+.form-group {
     .dropdown-menu.show {
         border: 1px solid #fff;
     }
-    .dropdown-toggle::after
-    {
+
+    .dropdown-toggle::after {
         border: 0 !important;
         background: url(../images/icon/arrow-dropdown.svg);
         width: 16px;
@@ -468,39 +474,47 @@ h6 {
         background-size: 15px;
     }
 }
-.modal{
-    .modal-content{
+
+.modal {
+    .modal-content {
         border: 0;
         border-radius: 15px;
-        .modal-header{
+
+        .modal-header {
             background: map_get($theme-colors, primary);
-            border-radius:  15px;
+            border-radius: 15px;
             color: #fff;
-            h5{
+
+            h5 {
                 font-family: $font-family-Bold;
             }
         }
-        .rules{
+
+        .rules {
             font-size: 1.1rem;
             color: map_get($theme-colors, primary);
             font-family: $font-family-Bold;
         }
-        .btn-danger{
+
+        .btn-danger {
             background: map_get($theme-colors, danger);
             font-size: 1.1rem;
             padding: 0rem 1.5rem;
             border-radius: 17px;
             min-height: 54px;
             font-family: $font-family-Bold;
-            @media (max-width: 991.98px){
+
+            @media (max-width: 991.98px) {
                 width: 100%;
             }
-            img{
+
+            img {
                 width: 20px;
             }
         }
     }
 }
+
 /*==Pagination==*/
 .pagination {
     gap: 0.5rem;
@@ -1509,8 +1523,8 @@ $breakpoint: 991px;
                         @include position(absolute, 7px, 0, auto, unset);
                         background: url(../images/icon/check.svg);
                     }
-                    &::after
-                   {
+
+                    &::after {
                         background-repeat: no-repeat;
                         background-size: 15px;
                         width: 14px;
@@ -1522,17 +1536,21 @@ $breakpoint: 991px;
 
         }
     }
-    .subscription-calculator{
+
+    .subscription-calculator {
         margin-top: 3rem;
-        p{
+
+        p {
             font-size: 1rem;
             color: map_get($theme-colors, primary);
             font-family: $font-family-Bold;
+
             @media only screen and (min-width: 991px) {
                 font-size: 1.5rem;
             }
         }
-        .btn{
+
+        .btn {
             border-radius: 0;
             padding: 1rem 0;
         }
@@ -2310,40 +2328,44 @@ button.back-to-top.show:active {
 }
 
 /*--contact-form--*/
-.contact-us-info{
+.contact-us-info {
     background: map_get($theme-colors, primaryBgColor);
     border-radius: 20px;
     padding: 1rem 1rem;
     margin: 3rem 0;
+
     @media only screen and (min-width: 991px) {
         padding: 2rem 2rem;
     }
-    .contact-us-box{
+
+    .contact-us-box {
         padding: 0 4%;
-        @media (max-width: 769px){
+
+        @media (max-width: 769px) {
             padding: 0;
             padding: 1.5rem;
             border-bottom: 2px solid #FDFBFB;
-            &:last-child
-            {
+
+            &:last-child {
                 border-bottom: 0;
             }
         }
-        &:not(:last-child){
+
+        &:not(:last-child) {
             @media (min-width: 769px) {
-                &::after
-                {
+                &::after {
                     content: '';
-                    @include position( absolute , 0, unset, 0, 0);
+                    @include position(absolute, 0, unset, 0, 0);
                     background: url(../images/global-image/sperator-line.svg);
                     background-repeat: no-repeat;
                     height: 180px;
                     width: 20px;
                     margin: auto;
                 }
-            } 
+            }
         }
-        .icon-part{
+
+        .icon-part {
             width: 90px;
             min-width: 90px;
             max-width: 90px;
@@ -2352,42 +2374,50 @@ button.back-to-top.show:active {
             background: #FDFBFB;
             overflow: hidden;
             margin: 0 auto;
-            img{
+
+            img {
                 width: 30px;
                 filter: brightness(0) saturate(100%) invert(47%) sepia(28%) saturate(1130%) hue-rotate(91deg) brightness(97%) contrast(92%);
             }
-            @media (max-width: 991px){
+
+            @media (max-width: 991px) {
                 width: 70px;
                 min-width: 70px;
                 max-width: 70px;
                 height: 70px;
-                img{
+
+                img {
                     width: 25px;
                 }
             }
         }
-        p{
-            span{
+
+        p {
+            span {
                 font-size: 1rem;
-                color:  map_get($theme-colors, grayColor);
-                a{
-                    color:  map_get($theme-colors, grayColor);
+                color: map_get($theme-colors, grayColor);
+
+                a {
+                    color: map_get($theme-colors, grayColor);
                     text-decoration: underline !important;
                 }
             }
         }
-        .mobile-number{
-            span{
+
+        .mobile-number {
+            span {
                 font-family: $font-family-Bold;
             }
         }
     }
-    
+
 }
+
 .contact-form {
     background: map_get($theme-colors, primaryBgColor);
     border-radius: 20px;
     padding: 1rem 1rem;
+
     @media only screen and (min-width: 991px) {
         padding: 2rem 2rem;
     }
@@ -2447,110 +2477,129 @@ button.back-to-top.show:active {
     width: 100%;
     position: absolute;
 }
+
 /*--ask-order--*/
-  .iti--allow-dropdown {
-     input{
+.iti--allow-dropdown {
+    input {
         width: calc(100% - 120px);
-      }
-  }
-  .iti__country-list{
+    }
+}
+
+.iti__country-list {
     margin-top: 35px;
-  }
-.ask-order{
-    .form-group{
+}
+
+.ask-order {
+    .form-group {
         width: 100%;
     }
-    .ask-order-item{
-        h4{
+
+    .ask-order-item {
+        h4 {
             color: map_get($theme-colors, primary);
             font-family: $font-family-Bold;
-            span{
+
+            span {
                 font-family: $font-family-base;
                 font-size: 0.849rem;
                 color: map_get($theme-colors, grayColor);
             }
         }
     }
-    .form-group{
+
+    .form-group {
         box-shadow: 0px 4px 4px 0px #00000040;
         padding: 0;
         min-height: 55px;
-        background:  map_get($theme-colors, primaryBgColor);
-        input{
+        background: map_get($theme-colors, primaryBgColor);
+
+        input {
             background: transparent;
             border: 0 !important;
             border-color: unset !important;
             padding: 0 1rem !important;
+
             &::-ms-input-placeholder {
                 color: #718479;
                 font-size: 0.875rem;
                 font-family: $font-family-base;
             }
+
             &::placeholder {
                 color: #718479;
                 font-size: 0.875rem;
                 font-family: $font-family-base;
             }
         }
-        &.text-area{
-            textarea{
+
+        &.text-area {
+            textarea {
                 border: 0;
-                background:  map_get($theme-colors, primaryBgColor);
+                background: map_get($theme-colors, primaryBgColor);
+
                 &::-ms-input-placeholder {
-                    color : #718479;
+                    color: #718479;
                     font-size: 1rem;
                     font-family: $font-family-base;
                 }
-        
+
                 &::placeholder {
-                    color : #718479;
+                    color: #718479;
                     font-size: 1rem;
                     font-family: $font-family-base;
                 }
             }
-           
+
         }
     }
-    label{
-        &.form-label{
+
+    label {
+        &.form-label {
             color: map_get($theme-colors, primary);
         }
     }
-    .btn-primary{
+
+    .btn-primary {
         border-radius: 0;
         font-size: 1.1rem;
     }
 }
+
 /*--download-center--*/
-.download-center{
-    .main-image{
-       img{
-        margin: 0 auto;
-       }
+.download-center {
+    .main-image {
+        img {
+            margin: 0 auto;
+        }
     }
-    .download-center-item{
-        h4{
+
+    .download-center-item {
+        h4 {
             color: map_get($theme-colors, primary);
             font-family: $font-family-Bold;
         }
-        .box{
+
+        .box {
             background: map_get($theme-colors, primaryBgColor);
             border-radius: 10px;
             padding: 0rem 1.5rem;
-            .box-link{
+
+            .box-link {
                 min-height: 95px;
             }
-            
-            .cloud{
+
+            .cloud {
                 width: 40px;
             }
-            .file-contain{
-                img{
+
+            .file-contain {
+                img {
                     width: 40px;
                 }
-                span{
+
+                span {
                     font-size: 1.2rem;
-                    color: map_get($theme-colors,  primaryTextColor);
+                    color: map_get($theme-colors, primaryTextColor);
                     display: -webkit-box;
                     line-clamp: 1;
                     -webkit-line-clamp: 1;
@@ -2562,59 +2611,71 @@ button.back-to-top.show:active {
         }
     }
 }
+
 /*--bank-account--*/
-.bank-account{
+.bank-account {
     @media only screen and (min-width: 991px) {
         .row>* {
             padding-left: calc(0.7rem* .5);
             padding-right: calc(0.7rem* .5);
         }
     }
-    .bank-account-box{
+
+    .bank-account-box {
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         border: 6px solid rgba(253, 251, 251, 1);
         border-radius: 6px;
         padding: 2rem 1rem;
         background: #fff;
-        .box-header{
-            img{
+
+        .box-header {
+            img {
                 width: 60px;
             }
-            p,.eng-bank-name{
+
+            p,
+            .eng-bank-name {
                 font-size: 1.3rem;
-                color:  map_get($theme-colors, primary);
+                color: map_get($theme-colors, primary);
                 font-family: $font-family-Bold;
                 margin-bottom: 0;
             }
-            .eng-bank-name{
+
+            .eng-bank-name {
                 font-size: 1rem;
                 text-transform: capitalize;
             }
         }
-        .box-body{
-            .bank-account{
+
+        .box-body {
+            .bank-account {
 
                 font-size: 1.1rem;
                 color: map_get($theme-colors, primaryTextColor);
                 font-family: $font-family-Bold;
+
                 @media only screen and (max-width: 769px) {
                     font-size: 0.849rem;
                 }
             }
-            p{
+
+            p {
                 font-size: 1.1rem;
                 color: map_get($theme-colors, primaryTextColor);
                 font-family: $font-family-Bold;
-                span{
+
+                span {
                     color: map_get($theme-colors, primary);
                     font-family: $font-family-base;
                 }
+
                 @media only screen and (max-width: 769px) {
                     font-size: 0.849rem;
                 }
             }
         }
     }
+
     .copy-text input.text {
         padding: 0px;
         font-size: 16px;
@@ -2623,6 +2684,7 @@ button.back-to-top.show:active {
         outline: none;
         background: transparent;
     }
+
     .copy-text button {
         padding: 0px;
         color: #fff;
@@ -2634,20 +2696,22 @@ button.back-to-top.show:active {
         border-radius: 0;
         cursor: pointer;
         background: transparent;
-        img{
+
+        img {
             width: 20px;
         }
     }
-    
+
     .copy-text button:active {
         background: transparent;
     }
+
     .copy-text button:before {
         content: "تم النسخ!";
-        @include position( absolute , -30px, -25px, unset, 0);
+        @include position(absolute, -30px, -25px, unset, 0);
         background: #fff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        color:  map_get($theme-colors, primary);
+        color: map_get($theme-colors, primary);
         padding: 9px 10px;
         border-radius: 6px;
         font-size: 15px;
@@ -2660,6 +2724,43 @@ button.back-to-top.show:active {
         display: block;
     }
 }
+/*--privacy-section--*/
+.privacy-section{
+    li::marker {
+        font-size: calc(1.275rem + .3vw);
+        color: map_get($theme-colors, primary);
+        font-family: $font-family-Bold;
+    }
+    h4{
+        color: map_get($theme-colors, primary);
+        font-family: $font-family-Bold;
+        margin-bottom:1.5rem;
+    }
+    span{
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        color: map_get($theme-colors, primaryTextColor);
+    }
+    p{
+        font-size: 1.3rem;
+        color: map_get($theme-colors, primary);
+    }
+    .order-list{
+        list-style: auto;
+        ol{
+            @include property_dir('padding', 'right', 1rem);
+            list-style: auto; 
+            li::marker {
+                font-size: 1rem;
+                color: map_get($theme-colors, primaryTextColor);
+                font-family: $font-family-base;
+            }
+            
+        }
+    }
+}
+
 /*--footer--*/
 footer {
     margin-top: 2em;
