@@ -243,7 +243,16 @@ h6 {
         margin-bottom: 2rem;
     }
 }
-
+.close{
+    background: transparent;
+    outline: 0;
+    box-shadow: none;
+    border-color: unset;
+    border: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    
+}
 .nav-tabs {
     box-shadow: 0px 4px 4px 0px #00000040;
     background: #fff;
