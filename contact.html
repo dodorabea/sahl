@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- Swiper Slider css -->
     <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!----------------intlTelInput------------------------>
+    <link rel="stylesheet" href="assets/telinput/css/intlTelInput.css" />
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,9 +204,10 @@
                             </div>
                         </div>
                         <!---->
-                        <div class="col-lg-6 col-md-12 mb-4">
-                            <div class="form-div">
-                                <input type="text" class="form-control" placeholder="رقم الهاتف">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                            <div class="form-group mobile-section d-flex align-items-center p-relative" data-lenis-prevent>
+                                <input id="phone" class="phone" name="phone" type="tel"
+                                    placeholder="رقم الهاتف" />
                             </div>
                         </div>
                         <!---->
@@ -378,10 +381,16 @@
     <script src="assets/js/lenis.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/script_lenis.js"></script>
+    <!----------------------intlTelInput-------------------------->
+    <script src="assets/telinput/js/intlTelInput.js"></script>
     <!-- Swiper JS -->
     <script src="assets/swiper/js/swiper.min.js"></script>
     <!--Main Js-->
     <script src="assets/js/main.js"></script>
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, { utilsScript: "assets/telinput/js/utils.js" });
+    </script>
 </body>
 
 </html>

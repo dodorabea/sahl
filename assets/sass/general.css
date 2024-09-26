@@ -2013,6 +2013,16 @@ html[dir=ltr] .nav-tabs .nav-item:not(:last-child)::after {
   background: #1E9B4F;
 }
 
+.form-group.mobile-section {
+  min-height: 50px;
+  border-radius: 15px;
+  background: #FDFBFB;
+  border: 1px solid #FDFBFB;
+  box-shadow: none;
+  border-color: #FDFBFB;
+  width: 100% !important;
+}
+
 .form-group {
   width: calc(100% - 40px);
 }
